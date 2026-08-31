@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/mighty840/wger-india/blob/india/wger/wger_india/data/food_schema.json",
+  "title": "wger-india food entry",
+  "description": "One food for `manage.py import_food_json`. All nutrition values are PER 100 g (or per 100 ml for drinks) of the food AS EATEN (cooked, unless the name says dry/raw). The importer accepts a single object or an array of these objects. Energy should satisfy the 4/4/9 rule (protein*4 + carbs*4 + fat*9) within ±15%; larger deviations are rejected unless --override-kcal-check is passed.",
+  "type": "object",
+  "required": ["name", "energy_kcal", "protein_g", "carbs_g", "fat_g"],
+  "additionalProperties": false,
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 200,
+      "description": "Display name. Convention: 'Food name (state)', e.g. 'Moong dal (cooked)', 'Soya chunks (dry)', 'Kaju katli'. State the cooked/dry/raw state explicitly whenever it is ambiguous."
+    },
+    "energy_kcal": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 900,
+      "description": "kcal per 100 g."
+    },
+    "protein_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Protein in g per 100 g."
+    },
+    "carbs_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Carbohydrates in g per 100 g (available carbohydrates, i.e. excluding fiber)."
+    },
+    "sugar_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional: sugars in g per 100 g (subset of carbs_g)."
+    },
+    "fat_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Fat in g per 100 g."
+    },
+    "sat_fat_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional: saturated fat in g per 100 g (subset of fat_g)."
+    },
+    "fiber_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional: dietary fiber in g per 100 g."
+    },
+    "sodium_g": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 100,
+      "description": "Optional: sodium in g per 100 g (salt / 2.5)."
+    },
+    "brand": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Optional: brand name for packaged products, e.g. 'Nutrela'."
+    },
+    "barcode": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Optional: EAN/UPC barcode of the packaged product."
+    },
+    "source_name": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Optional: where the values come from, e.g. 'IFCT 2017', 'product label', 'estimate'. Defaults to 'wger-india json import'."
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "maxLength": 200,
+      "description": "Optional: link to the source."
+    },
+    "portions": {
+      "type": "array",
+      "description": "Optional: human portion presets shown when logging, each mapping a named portion to grams. Common ones: katori = 150, roti = 45, glass = 250, handful = 30, piece = weight of one piece, tbsp = 15, tsp = 5.",
+      "items": {
+        "type": "object",
+        "required": ["name", "grams"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "maxLength": 200,
+            "description": "Portion name, singular, lowercase: 'katori', 'roti', 'piece', 'glass', 'handful', 'tbsp', 'tsp', 'plate'."
+          },
+          "grams": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 2000,
+            "description": "Weight of one such portion in grams (use ml ≈ g for drinks)."
+          }
+        }
+      }
+    }
+  }
+}

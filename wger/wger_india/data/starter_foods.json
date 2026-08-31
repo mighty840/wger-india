@@ -1,0 +1,256 @@
+[
+  {
+    "name": "Sattu flour (roasted chana)",
+    "energy_kcal": 406, "protein_g": 20.0, "carbs_g": 65.0, "fat_g": 5.3, "fiber_g": 12.0,
+    "source_name": "IFCT 2017 (approx.)",
+    "portions": [{"name": "tbsp", "grams": 15}, {"name": "sattu drink serving (dry)", "grams": 40}]
+  },
+  {
+    "name": "Ragi flour (finger millet)",
+    "energy_kcal": 328, "protein_g": 7.3, "carbs_g": 72.0, "fat_g": 1.9, "fiber_g": 11.2,
+    "source_name": "IFCT 2017 (approx.)"
+  },
+  {
+    "name": "Bajra flour (pearl millet)",
+    "energy_kcal": 361, "protein_g": 11.6, "carbs_g": 67.0, "fat_g": 5.0, "fiber_g": 11.3,
+    "source_name": "IFCT 2017 (approx.)"
+  },
+  {
+    "name": "Whole wheat flour (atta)",
+    "energy_kcal": 341, "protein_g": 12.0, "carbs_g": 69.4, "fat_g": 1.7, "fiber_g": 11.0,
+    "source_name": "IFCT 2017 (approx.)"
+  },
+  {
+    "name": "Roti (ragi-wheat 50/50, no fat)",
+    "energy_kcal": 280, "protein_g": 8.5, "carbs_g": 58.0, "fat_g": 1.6, "fiber_g": 7.0,
+    "source_name": "estimate (cooked)",
+    "portions": [{"name": "roti", "grams": 45}]
+  },
+  {
+    "name": "Urad dal (cooked)",
+    "energy_kcal": 105, "protein_g": 7.5, "carbs_g": 17.0, "fat_g": 0.6, "fiber_g": 4.0,
+    "source_name": "IFCT 2017 (approx., cooked)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Rajma (cooked)",
+    "energy_kcal": 127, "protein_g": 8.7, "carbs_g": 22.8, "fat_g": 0.5, "fiber_g": 6.4,
+    "source_name": "IFCT 2017 (approx., cooked)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Chana (brown chickpeas, cooked)",
+    "energy_kcal": 164, "protein_g": 8.9, "carbs_g": 27.4, "fat_g": 2.6, "fiber_g": 7.6,
+    "source_name": "IFCT 2017 (approx., cooked)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Moong dal (cooked)",
+    "energy_kcal": 105, "protein_g": 7.0, "carbs_g": 19.0, "fat_g": 0.4, "fiber_g": 7.6,
+    "source_name": "IFCT 2017 (approx., cooked)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Masoor dal (cooked)",
+    "energy_kcal": 116, "protein_g": 9.0, "carbs_g": 20.0, "fat_g": 0.4, "fiber_g": 7.9,
+    "source_name": "IFCT 2017 (approx., cooked)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Soya chunks (dry)",
+    "energy_kcal": 345, "protein_g": 52.0, "carbs_g": 33.0, "fat_g": 0.5, "fiber_g": 13.0,
+    "source_name": "product label (Nutrela)",
+    "portions": [{"name": "serving (dry)", "grams": 50}]
+  },
+  {
+    "name": "Tofu (firm)",
+    "energy_kcal": 144, "protein_g": 15.5, "carbs_g": 3.0, "fat_g": 8.7,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "half block", "grams": 100}]
+  },
+  {
+    "name": "Paneer (full fat)",
+    "energy_kcal": 296, "protein_g": 18.3, "carbs_g": 6.1, "fat_g": 22.0, "sat_fat_g": 13.0,
+    "source_name": "IFCT 2017 (approx.)",
+    "portions": [{"name": "cube", "grams": 15}]
+  },
+  {
+    "name": "Quark (Magerstufe)",
+    "energy_kcal": 67, "protein_g": 12.0, "carbs_g": 4.0, "sugar_g": 4.0, "fat_g": 0.2,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "serving", "grams": 200}]
+  },
+  {
+    "name": "Skyr (natur)",
+    "energy_kcal": 63, "protein_g": 11.0, "carbs_g": 4.0, "sugar_g": 4.0, "fat_g": 0.2,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "serving", "grams": 200}]
+  },
+  {
+    "name": "Protein yoghurt (natur)",
+    "energy_kcal": 68, "protein_g": 10.0, "carbs_g": 5.5, "sugar_g": 5.0, "fat_g": 0.4,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "cup", "grams": 200}]
+  },
+  {
+    "name": "Protein bread (Eiweissbrot)",
+    "energy_kcal": 245, "protein_g": 22.0, "carbs_g": 10.0, "fat_g": 12.0, "fiber_g": 6.0,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "slice", "grams": 45}]
+  },
+  {
+    "name": "Pumpkin seed bread",
+    "energy_kcal": 280, "protein_g": 10.0, "carbs_g": 38.0, "fat_g": 9.0, "fiber_g": 6.0,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "slice", "grams": 50}]
+  },
+  {
+    "name": "Egg (whole, boiled)",
+    "energy_kcal": 143, "protein_g": 12.6, "carbs_g": 0.7, "fat_g": 9.9, "sat_fat_g": 3.1,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "egg (M)", "grams": 55}, {"name": "egg (L)", "grams": 63}]
+  },
+  {
+    "name": "Chicken breast (cooked)",
+    "energy_kcal": 165, "protein_g": 31.0, "carbs_g": 0.0, "fat_g": 3.6, "sat_fat_g": 1.0,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "fillet", "grams": 150}]
+  },
+  {
+    "name": "Turkey breast (cooked)",
+    "energy_kcal": 147, "protein_g": 30.0, "carbs_g": 0.0, "fat_g": 2.0,
+    "source_name": "USDA (approx.)"
+  },
+  {
+    "name": "White fish (cooked, generic)",
+    "energy_kcal": 105, "protein_g": 23.0, "carbs_g": 0.0, "fat_g": 1.0,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "fillet", "grams": 150}]
+  },
+  {
+    "name": "Salmon (cooked)",
+    "energy_kcal": 206, "protein_g": 22.0, "carbs_g": 0.0, "fat_g": 12.4, "sat_fat_g": 2.5,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "fillet", "grams": 125}]
+  },
+  {
+    "name": "Muesli with nuts (no added sugar)",
+    "energy_kcal": 380, "protein_g": 11.0, "carbs_g": 58.0, "sugar_g": 12.0, "fat_g": 10.0, "fiber_g": 8.0,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "serving", "grams": 60}]
+  },
+  {
+    "name": "Peanuts (roasted)",
+    "energy_kcal": 585, "protein_g": 25.0, "carbs_g": 16.0, "fat_g": 50.0, "sat_fat_g": 7.0, "fiber_g": 8.4,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "handful", "grams": 30}]
+  },
+  {
+    "name": "Cashews",
+    "energy_kcal": 553, "protein_g": 18.0, "carbs_g": 30.0, "fat_g": 44.0, "sat_fat_g": 7.8,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "handful", "grams": 30}]
+  },
+  {
+    "name": "Almonds",
+    "energy_kcal": 579, "protein_g": 21.0, "carbs_g": 22.0, "fat_g": 50.0, "sat_fat_g": 3.8, "fiber_g": 12.5,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "handful", "grams": 30}]
+  },
+  {
+    "name": "Walnuts",
+    "energy_kcal": 654, "protein_g": 15.0, "carbs_g": 14.0, "fat_g": 65.0, "sat_fat_g": 6.1, "fiber_g": 6.7,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "handful", "grams": 30}]
+  },
+  {
+    "name": "Ghee",
+    "energy_kcal": 900, "protein_g": 0.0, "carbs_g": 0.0, "fat_g": 100.0, "sat_fat_g": 62.0,
+    "source_name": "IFCT 2017 (approx.)",
+    "portions": [{"name": "tsp", "grams": 5}, {"name": "tbsp", "grams": 15}]
+  },
+  {
+    "name": "Butter",
+    "energy_kcal": 744, "protein_g": 0.6, "carbs_g": 0.7, "fat_g": 82.0, "sat_fat_g": 52.0,
+    "source_name": "product label (DE)",
+    "portions": [{"name": "tsp", "grams": 5}, {"name": "tbsp", "grams": 15}]
+  },
+  {
+    "name": "Cooking oil (generic vegetable)",
+    "energy_kcal": 884, "protein_g": 0.0, "carbs_g": 0.0, "fat_g": 100.0, "sat_fat_g": 12.0,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "tsp", "grams": 5}, {"name": "tbsp", "grams": 14}]
+  },
+  {
+    "name": "Rice (white, cooked)",
+    "energy_kcal": 130, "protein_g": 2.7, "carbs_g": 28.0, "fat_g": 0.3,
+    "source_name": "USDA (approx.)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Mixed vegetables (cooked, no fat)",
+    "energy_kcal": 60, "protein_g": 2.5, "carbs_g": 10.0, "fat_g": 1.0, "fiber_g": 4.0,
+    "source_name": "estimate",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Pav bhaji — bhaji only",
+    "energy_kcal": 120, "protein_g": 3.0, "carbs_g": 14.0, "fat_g": 6.0,
+    "source_name": "estimate (restaurant style)",
+    "portions": [{"name": "serving", "grams": 250}]
+  },
+  {
+    "name": "Pav bun",
+    "energy_kcal": 285, "protein_g": 8.5, "carbs_g": 52.0, "fat_g": 4.5,
+    "source_name": "estimate",
+    "portions": [{"name": "pav", "grams": 40}]
+  },
+  {
+    "name": "Chana masala (dish)",
+    "energy_kcal": 130, "protein_g": 6.0, "carbs_g": 16.0, "fat_g": 4.5,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Rajma masala (dish)",
+    "energy_kcal": 120, "protein_g": 6.0, "carbs_g": 15.0, "fat_g": 4.0,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Dal fry (dish)",
+    "energy_kcal": 110, "protein_g": 5.5, "carbs_g": 12.0, "fat_g": 4.5,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Sattu drink (sweetened, prepared)",
+    "energy_kcal": 60, "protein_g": 3.0, "carbs_g": 10.0, "sugar_g": 4.0, "fat_g": 0.8,
+    "source_name": "estimate (per 100ml)",
+    "portions": [{"name": "glass", "grams": 250}]
+  },
+  {
+    "name": "Chaat (mixed, approximate)",
+    "energy_kcal": 180, "protein_g": 5.0, "carbs_g": 22.0, "fat_g": 8.0,
+    "source_name": "estimate",
+    "portions": [{"name": "plate", "grams": 200}]
+  },
+  {
+    "name": "Veg manchurian with noodles",
+    "energy_kcal": 165, "protein_g": 4.5, "carbs_g": 22.0, "fat_g": 6.5,
+    "source_name": "estimate (restaurant style)",
+    "portions": [{"name": "plate", "grams": 300}]
+  },
+  {
+    "name": "Kaju katli",
+    "energy_kcal": 500, "protein_g": 10.0, "carbs_g": 58.0, "sugar_g": 40.0, "fat_g": 26.0,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 12}]
+  },
+  {
+    "name": "Moong laddoo",
+    "energy_kcal": 450, "protein_g": 12.0, "carbs_g": 60.0, "sugar_g": 30.0, "fat_g": 18.0,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 25}]
+  }
+]

@@ -1,0 +1,64 @@
+name: wger-india
+
+on:
+  push:
+    branches: [ india ]
+    tags: [ 'india-v*' ]
+  pull_request:
+    branches: [ india ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      DJANGO_SETTINGS_MODULE: settings.ci
+      DJANGO_MEDIA_ROOT: /tmp/wger-test
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: |
+          uv sync --group dev --python 3.13
+          mkdir -p /tmp/wger-test
+
+      - name: Run wger_india tests
+        run: uv run ./manage.py test wger.wger_india
+
+  build:
+    # Image builds only for india-v* release tags
+    if: startsWith(github.ref, 'refs/tags/india-v')
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: docker/setup-buildx-action@v3
+
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: extras/docker/production/Dockerfile
+          push: true
+          tags: |
+            ghcr.io/${{ github.repository_owner }}/wger-india:${{ github.ref_name }}
+            ghcr.io/${{ github.repository_owner }}/wger-india:india-latest
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

@@ -87,6 +87,8 @@ INSTALLED_APPS = [
     'wger.gallery',
     'wger.measurements',
     'wger.trophies',
+    # wger-india overlay app (Indian foods, fasting/water tracking, goal engine)
+    'wger.wger_india',
 
     # reCaptcha support, see https://github.com/praekelt/django-recaptcha
     'django_recaptcha',
