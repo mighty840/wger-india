@@ -1,0 +1,2588 @@
+[
+ {
+  "name": "Uttapam (onion tomato)",
+  "energy_kcal": 182,
+  "protein_g": 4,
+  "carbs_g": 28,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Rava dosa",
+  "energy_kcal": 215,
+  "protein_g": 3.5,
+  "carbs_g": 30,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Pesarattu (moong dal dosa)",
+  "energy_kcal": 186,
+  "protein_g": 8,
+  "carbs_g": 25,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Appam",
+  "energy_kcal": 159,
+  "protein_g": 3,
+  "carbs_g": 30,
+  "fat_g": 3,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 70
+   }
+  ]
+ },
+ {
+  "name": "Puttu (rice, with coconut)",
+  "energy_kcal": 190,
+  "protein_g": 3.5,
+  "carbs_g": 35,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Idiyappam (string hoppers)",
+  "energy_kcal": 149,
+  "protein_g": 3,
+  "carbs_g": 32,
+  "fat_g": 1,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Sabudana khichdi",
+  "energy_kcal": 224,
+  "protein_g": 3,
+  "carbs_g": 35,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Sabudana vada",
+  "energy_kcal": 320,
+  "protein_g": 4,
+  "carbs_g": 40,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Thepla (methi)",
+  "energy_kcal": 325,
+  "protein_g": 7,
+  "carbs_g": 45,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Puri (fried)",
+  "energy_kcal": 359,
+  "protein_g": 6.5,
+  "carbs_g": 45,
+  "fat_g": 17,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Besan chilla",
+  "energy_kcal": 180,
+  "protein_g": 9,
+  "carbs_g": 18,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Moong dal chilla",
+  "energy_kcal": 166,
+  "protein_g": 10,
+  "carbs_g": 18,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Handvo",
+  "energy_kcal": 205,
+  "protein_g": 6,
+  "carbs_g": 25,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Thalipeeth",
+  "energy_kcal": 240,
+  "protein_g": 7,
+  "carbs_g": 35,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 70
+   }
+  ]
+ },
+ {
+  "name": "Paneer paratha",
+  "energy_kcal": 281,
+  "protein_g": 9,
+  "carbs_g": 32,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "paratha",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Gobi paratha",
+  "energy_kcal": 253,
+  "protein_g": 5.5,
+  "carbs_g": 33,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "paratha",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Mooli paratha",
+  "energy_kcal": 242,
+  "protein_g": 5,
+  "carbs_g": 32,
+  "fat_g": 10.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "paratha",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Methi paratha",
+  "energy_kcal": 267,
+  "protein_g": 6,
+  "carbs_g": 36,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4.5,
+  "portions": [
+   {
+    "name": "paratha",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Sattu paratha",
+  "energy_kcal": 295,
+  "protein_g": 9,
+  "carbs_g": 40,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 5,
+  "portions": [
+   {
+    "name": "paratha",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Vada pav",
+  "energy_kcal": 276,
+  "protein_g": 7,
+  "carbs_g": 35,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 130
+   }
+  ]
+ },
+ {
+  "name": "Dabeli",
+  "energy_kcal": 250,
+  "protein_g": 5,
+  "carbs_g": 35,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Misal (without pav)",
+  "energy_kcal": 135,
+  "protein_g": 6,
+  "carbs_g": 12,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Ven pongal",
+  "energy_kcal": 171,
+  "protein_g": 5,
+  "carbs_g": 22,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Bread pakora",
+  "energy_kcal": 270,
+  "protein_g": 6,
+  "carbs_g": 30,
+  "fat_g": 14,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Kachori (khasta)",
+  "energy_kcal": 382,
+  "protein_g": 6,
+  "carbs_g": 40,
+  "fat_g": 22,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Pani puri / golgappa",
+  "energy_kcal": 157,
+  "protein_g": 3,
+  "carbs_g": 25,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "serving (6 pcs)",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Bhel puri",
+  "energy_kcal": 203,
+  "protein_g": 5,
+  "carbs_g": 30,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Sev puri",
+  "energy_kcal": 242,
+  "protein_g": 6,
+  "carbs_g": 32,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Dahi puri",
+  "energy_kcal": 190,
+  "protein_g": 4.5,
+  "carbs_g": 25,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 180
+   }
+  ]
+ },
+ {
+  "name": "Dahi vada / dahi bhalla",
+  "energy_kcal": 126,
+  "protein_g": 5,
+  "carbs_g": 14,
+  "fat_g": 5.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Aloo tikki",
+  "energy_kcal": 181,
+  "protein_g": 3,
+  "carbs_g": 22,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 70
+   }
+  ]
+ },
+ {
+  "name": "Ragda pattice",
+  "energy_kcal": 155,
+  "protein_g": 5,
+  "carbs_g": 18,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Aloo chaat",
+  "energy_kcal": 178,
+  "protein_g": 2.5,
+  "carbs_g": 24,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Momos, veg (steamed)",
+  "energy_kcal": 160,
+  "protein_g": 5,
+  "carbs_g": 26,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Momos, chicken (steamed)",
+  "energy_kcal": 177,
+  "protein_g": 9,
+  "carbs_g": 24,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Spring roll (veg, fried)",
+  "energy_kcal": 256,
+  "protein_g": 4.5,
+  "carbs_g": 28,
+  "fat_g": 14,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Veg cutlet",
+  "energy_kcal": 202,
+  "protein_g": 4,
+  "carbs_g": 24,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Bread roll (fried)",
+  "energy_kcal": 275,
+  "protein_g": 5,
+  "carbs_g": 30,
+  "fat_g": 15,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Khandvi",
+  "energy_kcal": 168,
+  "protein_g": 6,
+  "carbs_g": 18,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 20
+   }
+  ]
+ },
+ {
+  "name": "Patra / alu vadi",
+  "energy_kcal": 180,
+  "protein_g": 5,
+  "carbs_g": 22,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Kathi roll, veg",
+  "energy_kcal": 226,
+  "protein_g": 6,
+  "carbs_g": 28,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "roll",
+    "grams": 180
+   }
+  ]
+ },
+ {
+  "name": "Kathi roll, chicken",
+  "energy_kcal": 230,
+  "protein_g": 10,
+  "carbs_g": 25,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "roll",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Banana chips",
+  "energy_kcal": 537,
+  "protein_g": 2,
+  "carbs_g": 58,
+  "fat_g": 33,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "sat_fat_g": 28,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Aloo bhujia",
+  "energy_kcal": 542,
+  "protein_g": 9,
+  "carbs_g": 50,
+  "fat_g": 34,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Sev (besan)",
+  "energy_kcal": 546,
+  "protein_g": 12,
+  "carbs_g": 48,
+  "fat_g": 34,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 5,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Namkeen mixture",
+  "energy_kcal": 533,
+  "protein_g": 11,
+  "carbs_g": 48,
+  "fat_g": 33,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 6,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Chakli / murukku",
+  "energy_kcal": 496,
+  "protein_g": 6,
+  "carbs_g": 55,
+  "fat_g": 28,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Mathri",
+  "energy_kcal": 470,
+  "protein_g": 7,
+  "carbs_g": 52,
+  "fat_g": 26,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 20
+   }
+  ]
+ },
+ {
+  "name": "Khakhra",
+  "energy_kcal": 391,
+  "protein_g": 11,
+  "carbs_g": 62,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 9,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 15
+   }
+  ]
+ },
+ {
+  "name": "Papad (roasted)",
+  "energy_kcal": 318,
+  "protein_g": 20,
+  "carbs_g": 55,
+  "fat_g": 2,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 10,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 10
+   }
+  ]
+ },
+ {
+  "name": "Papad (fried)",
+  "energy_kcal": 512,
+  "protein_g": 17,
+  "carbs_g": 48,
+  "fat_g": 28,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 9,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 12
+   }
+  ]
+ },
+ {
+  "name": "Masala peanuts (fried)",
+  "energy_kcal": 510,
+  "protein_g": 22,
+  "carbs_g": 20,
+  "fat_g": 38,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 6,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Roasted chana",
+  "energy_kcal": 354,
+  "protein_g": 20,
+  "carbs_g": 55,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 15,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Corn chaat",
+  "energy_kcal": 158,
+  "protein_g": 4,
+  "carbs_g": 22,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Gulab jamun",
+  "energy_kcal": 324,
+  "protein_g": 4,
+  "carbs_g": 50,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sugar_g": 38,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Rasgulla",
+  "energy_kcal": 178,
+  "protein_g": 5,
+  "carbs_g": 35,
+  "fat_g": 2,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 30,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Rasmalai",
+  "energy_kcal": 209,
+  "protein_g": 7,
+  "carbs_g": 25,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 20,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Jalebi",
+  "energy_kcal": 410,
+  "protein_g": 2,
+  "carbs_g": 60,
+  "fat_g": 18,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sugar_g": 40,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Imarti",
+  "energy_kcal": 376,
+  "protein_g": 3,
+  "carbs_g": 55,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sugar_g": 38,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Besan laddoo",
+  "energy_kcal": 454,
+  "protein_g": 9,
+  "carbs_g": 55,
+  "fat_g": 22,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "sugar_g": 35,
+  "sat_fat_g": 10,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Boondi laddoo",
+  "energy_kcal": 418,
+  "protein_g": 6,
+  "carbs_g": 58,
+  "fat_g": 18,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 38,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Motichoor laddoo",
+  "energy_kcal": 409,
+  "protein_g": 6,
+  "carbs_g": 58,
+  "fat_g": 17,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 38,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Atta laddoo",
+  "energy_kcal": 444,
+  "protein_g": 8,
+  "carbs_g": 58,
+  "fat_g": 20,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "sugar_g": 30,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Khoya barfi (plain)",
+  "energy_kcal": 394,
+  "protein_g": 8,
+  "carbs_g": 50,
+  "fat_g": 18,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 40,
+  "sat_fat_g": 11,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Coconut barfi",
+  "energy_kcal": 407,
+  "protein_g": 4,
+  "carbs_g": 55,
+  "fat_g": 19,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "sugar_g": 45,
+  "sat_fat_g": 15,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Pista barfi",
+  "energy_kcal": 404,
+  "protein_g": 8,
+  "carbs_g": 48,
+  "fat_g": 20,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "sugar_g": 38,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Kalakand",
+  "energy_kcal": 322,
+  "protein_g": 9,
+  "carbs_g": 40,
+  "fat_g": 14,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 32,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Milk cake",
+  "energy_kcal": 351,
+  "protein_g": 9,
+  "carbs_g": 45,
+  "fat_g": 15,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 36,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Peda",
+  "energy_kcal": 396,
+  "protein_g": 8,
+  "carbs_g": 55,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 45,
+  "sat_fat_g": 10,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Sandesh",
+  "energy_kcal": 286,
+  "protein_g": 9,
+  "carbs_g": 40,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 32,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Cham cham",
+  "energy_kcal": 247,
+  "protein_g": 6,
+  "carbs_g": 40,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 32,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 45
+   }
+  ]
+ },
+ {
+  "name": "Gajar ka halwa",
+  "energy_kcal": 244,
+  "protein_g": 4,
+  "carbs_g": 30,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 24,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Moong dal halwa",
+  "energy_kcal": 410,
+  "protein_g": 8,
+  "carbs_g": 45,
+  "fat_g": 22,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 30,
+  "sat_fat_g": 11,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Sooji halwa / sheera",
+  "energy_kcal": 340,
+  "protein_g": 4,
+  "carbs_g": 45,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sugar_g": 25,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Badam halwa",
+  "energy_kcal": 421,
+  "protein_g": 9,
+  "carbs_g": 40,
+  "fat_g": 25,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 30,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Rice kheer",
+  "energy_kcal": 130,
+  "protein_g": 3.5,
+  "carbs_g": 20,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.2,
+  "sugar_g": 14,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Seviyan kheer",
+  "energy_kcal": 142,
+  "protein_g": 3.5,
+  "carbs_g": 22,
+  "fat_g": 4.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sugar_g": 14,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Phirni",
+  "energy_kcal": 140,
+  "protein_g": 4,
+  "carbs_g": 22,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.2,
+  "sugar_g": 15,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Rabri",
+  "energy_kcal": 236,
+  "protein_g": 7,
+  "carbs_g": 25,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 20,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Shrikhand",
+  "energy_kcal": 190,
+  "protein_g": 6,
+  "carbs_g": 28,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 24,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Basundi",
+  "energy_kcal": 193,
+  "protein_g": 6,
+  "carbs_g": 22,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 18,
+  "sat_fat_g": 5.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Mysore pak",
+  "energy_kcal": 492,
+  "protein_g": 5,
+  "carbs_g": 55,
+  "fat_g": 28,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "sugar_g": 40,
+  "sat_fat_g": 16,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Soan papdi",
+  "energy_kcal": 484,
+  "protein_g": 7,
+  "carbs_g": 60,
+  "fat_g": 24,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "sugar_g": 42,
+  "sat_fat_g": 10,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Balushahi",
+  "energy_kcal": 445,
+  "protein_g": 5,
+  "carbs_g": 50,
+  "fat_g": 25,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sugar_g": 28,
+  "sat_fat_g": 12,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Ghevar",
+  "energy_kcal": 410,
+  "protein_g": 5,
+  "carbs_g": 48,
+  "fat_g": 22,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sugar_g": 30,
+  "sat_fat_g": 11,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Malpua",
+  "energy_kcal": 326,
+  "protein_g": 5,
+  "carbs_g": 45,
+  "fat_g": 14,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sugar_g": 28,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Gujiya",
+  "energy_kcal": 422,
+  "protein_g": 6,
+  "carbs_g": 50,
+  "fat_g": 22,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 30,
+  "sat_fat_g": 10,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 45
+   }
+  ]
+ },
+ {
+  "name": "Modak (steamed)",
+  "energy_kcal": 266,
+  "protein_g": 3.5,
+  "carbs_g": 45,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 25,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Peanut chikki",
+  "energy_kcal": 472,
+  "protein_g": 14,
+  "carbs_g": 50,
+  "fat_g": 24,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "sugar_g": 40,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Til laddoo",
+  "energy_kcal": 448,
+  "protein_g": 8,
+  "carbs_g": 50,
+  "fat_g": 24,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 5,
+  "sugar_g": 35,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Petha",
+  "energy_kcal": 225,
+  "protein_g": 0.5,
+  "carbs_g": 55,
+  "fat_g": 0.3,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sugar_g": 50,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Kulfi",
+  "energy_kcal": 210,
+  "protein_g": 5,
+  "carbs_g": 25,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.3,
+  "sugar_g": 20,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 70
+   }
+  ]
+ },
+ {
+  "name": "Dal tadka",
+  "energy_kcal": 121,
+  "protein_g": 6,
+  "carbs_g": 13,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Dal makhani",
+  "energy_kcal": 156,
+  "protein_g": 7,
+  "carbs_g": 14,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Kadhi pakora",
+  "energy_kcal": 117,
+  "protein_g": 4.5,
+  "carbs_g": 9,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Palak paneer",
+  "energy_kcal": 164,
+  "protein_g": 8,
+  "carbs_g": 6,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Paneer butter masala",
+  "energy_kcal": 216,
+  "protein_g": 9,
+  "carbs_g": 9,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Shahi paneer",
+  "energy_kcal": 220,
+  "protein_g": 9,
+  "carbs_g": 10,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Matar paneer",
+  "energy_kcal": 180,
+  "protein_g": 8,
+  "carbs_g": 10,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Kadai paneer",
+  "energy_kcal": 185,
+  "protein_g": 9,
+  "carbs_g": 8,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sat_fat_g": 6.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Paneer tikka",
+  "energy_kcal": 205,
+  "protein_g": 16,
+  "carbs_g": 6,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Malai kofta",
+  "energy_kcal": 224,
+  "protein_g": 6,
+  "carbs_g": 14,
+  "fat_g": 16,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Aloo gobi",
+  "energy_kcal": 131,
+  "protein_g": 3,
+  "carbs_g": 14,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Aloo matar",
+  "energy_kcal": 124,
+  "protein_g": 3.5,
+  "carbs_g": 14,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Bhindi masala",
+  "energy_kcal": 129,
+  "protein_g": 3,
+  "carbs_g": 9,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Baingan bharta",
+  "energy_kcal": 114,
+  "protein_g": 2.5,
+  "carbs_g": 8,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Jeera aloo",
+  "energy_kcal": 145,
+  "protein_g": 2.5,
+  "carbs_g": 18,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Mix veg curry",
+  "energy_kcal": 115,
+  "protein_g": 3,
+  "carbs_g": 10,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Mushroom masala",
+  "energy_kcal": 120,
+  "protein_g": 4,
+  "carbs_g": 8,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Lauki sabzi",
+  "energy_kcal": 66,
+  "protein_g": 1.5,
+  "carbs_g": 6,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Cabbage sabzi",
+  "energy_kcal": 85,
+  "protein_g": 2,
+  "carbs_g": 8,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Karela sabzi",
+  "energy_kcal": 124,
+  "protein_g": 3,
+  "carbs_g": 10,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Methi aloo",
+  "energy_kcal": 133,
+  "protein_g": 3.5,
+  "carbs_g": 14,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Sarson ka saag",
+  "energy_kcal": 129,
+  "protein_g": 4,
+  "carbs_g": 8,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Veg kolhapuri",
+  "energy_kcal": 145,
+  "protein_g": 4,
+  "carbs_g": 12,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chole (halwai style)",
+  "energy_kcal": 163,
+  "protein_g": 7,
+  "carbs_g": 18,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Butter chicken",
+  "energy_kcal": 193,
+  "protein_g": 14,
+  "carbs_g": 5,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chicken curry (home style)",
+  "energy_kcal": 144,
+  "protein_g": 14,
+  "carbs_g": 4,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chicken tikka",
+  "energy_kcal": 180,
+  "protein_g": 24,
+  "carbs_g": 3,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chicken tikka masala",
+  "energy_kcal": 171,
+  "protein_g": 13,
+  "carbs_g": 5,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Tandoori chicken",
+  "energy_kcal": 185,
+  "protein_g": 24,
+  "carbs_g": 2,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.3,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "leg piece",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chicken 65",
+  "energy_kcal": 238,
+  "protein_g": 18,
+  "carbs_g": 10,
+  "fat_g": 14,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.8,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chicken korma",
+  "energy_kcal": 198,
+  "protein_g": 13,
+  "carbs_g": 5,
+  "fat_g": 14,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Egg curry",
+  "energy_kcal": 133,
+  "protein_g": 8,
+  "carbs_g": 5,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Egg bhurji",
+  "energy_kcal": 173,
+  "protein_g": 11,
+  "carbs_g": 3,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Fish curry",
+  "energy_kcal": 140,
+  "protein_g": 13,
+  "carbs_g": 4,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.8,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Fish fry",
+  "energy_kcal": 212,
+  "protein_g": 18,
+  "carbs_g": 8,
+  "fat_g": 12,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Mutton curry",
+  "energy_kcal": 175,
+  "protein_g": 15,
+  "carbs_g": 4,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.8,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Mutton rogan josh",
+  "energy_kcal": 189,
+  "protein_g": 14,
+  "carbs_g": 4,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.8,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Chicken keema",
+  "energy_kcal": 162,
+  "protein_g": 14,
+  "carbs_g": 4,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Mutton keema",
+  "energy_kcal": 189,
+  "protein_g": 14,
+  "carbs_g": 4,
+  "fat_g": 13,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Prawn curry",
+  "energy_kcal": 140,
+  "protein_g": 12,
+  "carbs_g": 5,
+  "fat_g": 8,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.8,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Veg pulao",
+  "energy_kcal": 159,
+  "protein_g": 3.5,
+  "carbs_g": 25,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   },
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Jeera rice",
+  "energy_kcal": 169,
+  "protein_g": 3,
+  "carbs_g": 28,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   },
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Curd rice",
+  "energy_kcal": 122,
+  "protein_g": 3.5,
+  "carbs_g": 18,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   },
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Lemon rice",
+  "energy_kcal": 170,
+  "protein_g": 3,
+  "carbs_g": 26,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   },
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Tamarind rice",
+  "energy_kcal": 189,
+  "protein_g": 3.5,
+  "carbs_g": 28,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   },
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Veg fried rice",
+  "energy_kcal": 174,
+  "protein_g": 4,
+  "carbs_g": 26,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Egg fried rice",
+  "energy_kcal": 187,
+  "protein_g": 6,
+  "carbs_g": 25,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Chicken fried rice",
+  "energy_kcal": 191,
+  "protein_g": 8,
+  "carbs_g": 24,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Bisi bele bath",
+  "energy_kcal": 162,
+  "protein_g": 5,
+  "carbs_g": 22,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Naan (plain)",
+  "energy_kcal": 286,
+  "protein_g": 8,
+  "carbs_g": 50,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Butter naan",
+  "energy_kcal": 314,
+  "protein_g": 8,
+  "carbs_g": 48,
+  "fat_g": 10,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Garlic naan",
+  "energy_kcal": 323,
+  "protein_g": 8,
+  "carbs_g": 48,
+  "fat_g": 11,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Tandoori roti",
+  "energy_kcal": 263,
+  "protein_g": 9,
+  "carbs_g": 50,
+  "fat_g": 3,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 6,
+  "sat_fat_g": 0.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Rumali roti",
+  "energy_kcal": 276,
+  "protein_g": 8,
+  "carbs_g": 52,
+  "fat_g": 4,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3,
+  "sat_fat_g": 0.7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Missi roti",
+  "energy_kcal": 283,
+  "protein_g": 10,
+  "carbs_g": 45,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 6,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Kulcha",
+  "energy_kcal": 295,
+  "protein_g": 8,
+  "carbs_g": 50,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 2.5,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Rasam",
+  "energy_kcal": 40,
+  "protein_g": 1.5,
+  "carbs_g": 5,
+  "fat_g": 1.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Avial",
+  "energy_kcal": 125,
+  "protein_g": 3,
+  "carbs_g": 8,
+  "fat_g": 9,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Beans poriyal",
+  "energy_kcal": 113,
+  "protein_g": 3.5,
+  "carbs_g": 9,
+  "fat_g": 7,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 4,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Kootu",
+  "energy_kcal": 101,
+  "protein_g": 4,
+  "carbs_g": 10,
+  "fat_g": 5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 3.5,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Lassi (sweet)",
+  "energy_kcal": 99,
+  "protein_g": 3,
+  "carbs_g": 15,
+  "fat_g": 3,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 14,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Chaas / buttermilk (salted)",
+  "energy_kcal": 25,
+  "protein_g": 1.5,
+  "carbs_g": 2.5,
+  "fat_g": 1,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 2.5,
+  "sat_fat_g": 0.6,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Masala chai (milk and sugar)",
+  "energy_kcal": 62,
+  "protein_g": 2,
+  "carbs_g": 8,
+  "fat_g": 2.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 7,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Filter coffee (milk and sugar)",
+  "energy_kcal": 69,
+  "protein_g": 2.5,
+  "carbs_g": 8,
+  "fat_g": 3,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 7,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Nimbu pani (sweet)",
+  "energy_kcal": 40,
+  "protein_g": 0,
+  "carbs_g": 10,
+  "fat_g": 0,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0,
+  "sugar_g": 10,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Aam panna",
+  "energy_kcal": 50,
+  "protein_g": 0.3,
+  "carbs_g": 12,
+  "fat_g": 0.1,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.3,
+  "sugar_g": 11,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Badam milk",
+  "energy_kcal": 104,
+  "protein_g": 4,
+  "carbs_g": 12,
+  "fat_g": 4.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.4,
+  "sugar_g": 11,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Thandai",
+  "energy_kcal": 126,
+  "protein_g": 4,
+  "carbs_g": 14,
+  "fat_g": 6,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.8,
+  "sugar_g": 12,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Mango milkshake",
+  "energy_kcal": 111,
+  "protein_g": 3,
+  "carbs_g": 18,
+  "fat_g": 3,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 0.5,
+  "sugar_g": 16,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Falooda",
+  "energy_kcal": 154,
+  "protein_g": 3.5,
+  "carbs_g": 25,
+  "fat_g": 4.5,
+  "source_name": "estimate (Indian dish, per 100g)",
+  "fiber_g": 1,
+  "sugar_g": 20,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 300
+   }
+  ]
+ }
+]

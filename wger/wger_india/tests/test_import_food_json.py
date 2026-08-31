@@ -144,7 +144,7 @@ class ImportFoodJsonTestCase(TestCase):
     def test_starter_fixtures_are_valid(self):
         """The shipped fixtures pass validation and import completely"""
         total = 0
-        for fixture in ('starter_foods.json', 'starter_dishes.json'):
+        for fixture in ('starter_foods.json', 'starter_dishes.json', 'indian_dishes.json'):
             out = StringIO()
             call_command('import_food_json', str(DATA_DIR / fixture), stdout=out)
             total += len(json.loads((DATA_DIR / fixture).read_text()))
