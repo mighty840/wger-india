@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% translate "Daily quick log" %}{% endblock %}
+
+{% block content %}
+
+    {# ---------------- Water ---------------- #}
+    <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+            <span><i class="fas fa-tint"></i> {% translate "Water" %}</span>
+            <span>{{ total_ml }} / {{ profile.water_target_ml }} ml</span>
+        </div>
+        <div class="card-body">
+            <div class="progress mb-3" style="height: 24px;">
+                <div class="progress-bar {% if water_percent >= 100 %}bg-success{% else %}bg-info{% endif %}"
+                     role="progressbar"
+                     style="width: {{ water_percent }}%;"
+                     aria-valuenow="{{ total_ml }}"
+                     aria-valuemin="0"
+                     aria-valuemax="{{ profile.water_target_ml }}">
+                    {{ water_percent }}%
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 mb-2">
+                {% for amount in water_quick_adds %}
+                    <form method="post" class="flex-fill">
+                        {% csrf_token %}
+                        <input type="hidden" name="action" value="water">
+                        <input type="hidden" name="amount_ml" value="{{ amount }}">
+                        <button type="submit" class="btn btn-primary w-100 py-3">
+                            +{% if amount >= 1000 %}1 L{% else %}{{ amount }} ml{% endif %}
+                        </button>
+                    </form>
+                {% endfor %}
+            </div>
+
+            {% if water_entries %}
+                <form method="post" class="d-inline">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="water_undo">
+                    <button type="submit" class="btn btn-sm btn-outline-secondary">
+                        <i class="fas fa-undo"></i> {% translate "Undo last" %}
+                        ({{ water_entries.0.amount_ml }} ml)
+                    </button>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+
+    {# ---------------- Fasting ---------------- #}
+    <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between">
+            <span><i class="fas fa-moon"></i> {% translate "Overnight fast" %}</span>
+            {% if weekly_average_hours %}
+                <span>{% translate "7-day average" %}: {{ weekly_average_hours|floatformat:1 }} h</span>
+            {% endif %}
+        </div>
+        <div class="card-body">
+            {% if fast %}
+                <p class="mb-2">
+                    <span class="badge {% if fast.duration_hours >= fasting_target_hours %}bg-success{% else %}bg-warning text-dark{% endif %} fs-6">
+                        {{ fast.duration_hours|floatformat:1 }} h
+                    </span>
+                    {{ fast.fast_start|date:"H:i" }} → {{ fast.fast_end|date:"H:i" }}
+                    ({% translate "target" %} ≥ {{ fasting_target_hours|floatformat:1 }} h)
+                </p>
+            {% else %}
+                <form method="post" class="mb-3">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="fast_confirm">
+                    <button type="submit" class="btn btn-success w-100 py-3">
+                        <i class="fas fa-check"></i>
+                        {% translate "Confirm fast" %}
+                        {{ default_start|date:"H:i" }} → {{ default_end|date:"H:i" }}
+                    </button>
+                </form>
+            {% endif %}
+
+            <details {% if not fast %}class="mt-2"{% endif %}>
+                <summary class="text-muted">{% translate "Adjust times" %}</summary>
+                <form method="post" class="row g-2 mt-1">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="fast_save">
+                    <div class="col">
+                        <label class="form-label">{% translate "Ate last at (yesterday)" %}</label>
+                        <input type="time" class="form-control" name="fast_start"
+                               value="{% if fast %}{{ fast.fast_start|date:'H:i' }}{% else %}{{ default_start|date:'H:i' }}{% endif %}">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">{% translate "Broke fast at (today)" %}</label>
+                        <input type="time" class="form-control" name="fast_end"
+                               value="{% if fast %}{{ fast.fast_end|date:'H:i' }}{% else %}{{ default_end|date:'H:i' }}{% endif %}">
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-outline-primary">{% translate "Save" %}</button>
+                        {% if fast %}
+                            <button type="submit" name="action" value="fast_delete"
+                                    class="btn btn-outline-danger">
+                                {% translate "Delete" %}
+                            </button>
+                        {% endif %}
+                    </div>
+                </form>
+            </details>
+        </div>
+    </div>
+
+{% endblock %}

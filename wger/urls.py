@@ -50,6 +50,7 @@ from wger.trophies.api import views as trophies_api_views
 from wger.utils import oidc_auth
 from wger.utils.generic_views import TextTemplateView
 from wger.weight.api import views as weight_api_views
+from wger.wger_india.api import views as india_api_views
 
 
 #
@@ -258,6 +259,10 @@ router.register(
     basename='user-statistics',
 )
 
+# wger_india overlay app
+router.register(r'water-log', india_api_views.WaterLogViewSet, basename='water-log')
+router.register(r'fasting-log', india_api_views.FastingLogViewSet, basename='fasting-log')
+
 #
 # Sitemaps
 #
@@ -284,6 +289,8 @@ urlpatterns = i18n_patterns(
         include(('wger.measurements.urls', 'measurements'), namespace='measurements'),
     ),
     path('email/', include(('wger.mailer.urls', 'email'), namespace='email')),
+    # wger_india overlay app
+    path('india/', include(('wger.wger_india.urls', 'india'), namespace='india')),
     path('sitemap.xml', index, {'sitemaps': sitemaps}, name='sitemap'),
     path(
         'sitemap-<section>.xml',
@@ -326,6 +333,7 @@ urlpatterns += [
         core_api_views.VerifyEmailView.as_view(),
         name='userprofile-verify-email',
     ),
+    path('api/v2/india-profile/', india_api_views.IndiaProfileView.as_view(), name='india-profile'),
     path('api/v2/', include(router.urls)),
     path('api/v2/token/refresh', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/v2/token/verify', TokenVerifyView.as_view(), name='token_verify'),

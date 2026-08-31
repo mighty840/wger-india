@@ -137,6 +137,12 @@
 
 
                     {#               #}
+                    {# wger_india quick log #}
+                    <li class="nav-item">
+                        <a class="nav-link text-white {% if active_tab == 'india' %}text-decoration-underline{% endif %}"
+                           href="{% url 'india:quicklog' %}" rel="nofollow">{% translate "Quick log" %}</a>
+                    </li>
+
                     {# Nutrition tab #}
                     {#               #}
                     <li class="nav-item dropdown">
