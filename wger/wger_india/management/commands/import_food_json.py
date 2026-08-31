@@ -26,6 +26,7 @@ from wger.nutrition.models import (
     IngredientWeightUnit,
 )
 from wger.utils.language import load_language
+from wger.wger_india.powersync import sync_shadow_ingredients
 
 DEFAULT_SOURCE_NAME = 'wger-india json import'
 
@@ -179,6 +180,9 @@ class Command(BaseCommand):
         with transaction.atomic():
             imported = [self.import_item(item, language) for item in valid]
 
+        synced = sync_shadow_ingredients()
+        if synced:
+            self.stdout.write(f'Powersync shadow table: {synced} rows added')
         self.write_audit_log(path, imported)
         self.stdout.write(self.style.SUCCESS(f'Imported {len(imported)} foods'))
 

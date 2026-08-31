@@ -27,6 +27,7 @@ from wger.nutrition.models import (
     IngredientCategory,
 )
 from wger.utils.language import load_language
+from wger.wger_india.powersync import sync_shadow_ingredients
 
 KJ_PER_KCAL = 4.184
 SOURCE_NAME = 'IFCT 2017 (NIN Hyderabad)'
@@ -139,6 +140,9 @@ class Command(BaseCommand):
                 else:
                     existing += 1
 
+        synced = sync_shadow_ingredients()
+        if synced:
+            self.stdout.write(f'Powersync shadow table: {synced} rows added')
         self.write_audit_log(path, created, updated, existing, len(skipped))
         self.stdout.write(
             self.style.SUCCESS(
