@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Paratha (plain, with ghee)",
+    "energy_kcal": 300, "protein_g": 6.5, "carbs_g": 42.0, "fat_g": 12.0, "fiber_g": 5.0,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "paratha", "grams": 80}]
+  },
+  {
+    "name": "Aloo paratha (with ghee)",
+    "energy_kcal": 270, "protein_g": 5.5, "carbs_g": 35.0, "fat_g": 11.5, "fiber_g": 4.0,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "paratha", "grams": 110}]
+  },
+  {
+    "name": "Poha (cooked, with oil and peanuts)",
+    "energy_kcal": 160, "protein_g": 3.5, "carbs_g": 24.0, "fat_g": 5.5, "fiber_g": 2.0,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "plate", "grams": 200}, {"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Medu vada (fried)",
+    "energy_kcal": 300, "protein_g": 8.0, "carbs_g": 32.0, "fat_g": 15.5, "fiber_g": 3.5,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 45}]
+  },
+  {
+    "name": "Idli",
+    "energy_kcal": 130, "protein_g": 4.0, "carbs_g": 26.0, "fat_g": 0.6,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 60}]
+  },
+  {
+    "name": "Dosa (plain, with oil)",
+    "energy_kcal": 200, "protein_g": 4.5, "carbs_g": 30.0, "fat_g": 7.0,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 80}]
+  },
+  {
+    "name": "Masala dosa",
+    "energy_kcal": 180, "protein_g": 4.0, "carbs_g": 26.0, "fat_g": 6.5,
+    "source_name": "estimate (restaurant style)",
+    "portions": [{"name": "piece", "grams": 150}]
+  },
+  {
+    "name": "Upma",
+    "energy_kcal": 155, "protein_g": 3.5, "carbs_g": 22.0, "fat_g": 5.8, "fiber_g": 1.5,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Khichdi (moong dal and rice)",
+    "energy_kcal": 120, "protein_g": 4.5, "carbs_g": 19.0, "fat_g": 3.0, "fiber_g": 2.5,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Sambar",
+    "energy_kcal": 65, "protein_g": 3.0, "carbs_g": 9.0, "fat_g": 2.0, "fiber_g": 2.5,
+    "source_name": "estimate (home style)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Coconut chutney",
+    "energy_kcal": 180, "protein_g": 3.0, "carbs_g": 7.0, "fat_g": 16.0, "sat_fat_g": 13.0, "fiber_g": 4.0,
+    "source_name": "estimate",
+    "portions": [{"name": "tbsp", "grams": 15}]
+  },
+  {
+    "name": "Curd / dahi (full fat)",
+    "energy_kcal": 62, "protein_g": 3.3, "carbs_g": 4.5, "sugar_g": 4.5, "fat_g": 3.4, "sat_fat_g": 2.2,
+    "source_name": "IFCT 2017 (approx.)",
+    "portions": [{"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Samosa (fried)",
+    "energy_kcal": 310, "protein_g": 5.0, "carbs_g": 33.0, "fat_g": 17.5, "fiber_g": 3.0,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 100}]
+  },
+  {
+    "name": "Pakora / bhajiya (fried)",
+    "energy_kcal": 315, "protein_g": 7.0, "carbs_g": 28.0, "fat_g": 19.0, "fiber_g": 4.0,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 30}]
+  },
+  {
+    "name": "Dhokla (steamed)",
+    "energy_kcal": 160, "protein_g": 6.0, "carbs_g": 24.0, "fat_g": 4.5, "fiber_g": 2.5,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 40}]
+  },
+  {
+    "name": "Vegetable biryani",
+    "energy_kcal": 165, "protein_g": 4.0, "carbs_g": 24.0, "fat_g": 6.0, "fiber_g": 2.0,
+    "source_name": "estimate (restaurant style)",
+    "portions": [{"name": "plate", "grams": 300}, {"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Chicken biryani",
+    "energy_kcal": 180, "protein_g": 9.0, "carbs_g": 20.0, "fat_g": 7.5,
+    "source_name": "estimate (restaurant style)",
+    "portions": [{"name": "plate", "grams": 300}, {"name": "katori", "grams": 150}]
+  },
+  {
+    "name": "Bhatura (fried)",
+    "energy_kcal": 330, "protein_g": 7.5, "carbs_g": 45.0, "fat_g": 13.0,
+    "source_name": "estimate",
+    "portions": [{"name": "piece", "grams": 90}]
+  }
+]

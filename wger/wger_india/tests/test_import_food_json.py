@@ -141,12 +141,14 @@ class ImportFoodJsonTestCase(TestCase):
             self.assertEqual(entry['name'], 'Moong dal (cooked)')
             self.assertIn('ts', entry)
 
-    def test_starter_fixture_is_valid(self):
-        """The shipped starter fixture passes validation and imports completely"""
-        out = StringIO()
-        call_command('import_food_json', str(DATA_DIR / 'starter_foods.json'), stdout=out)
-        data = json.loads((DATA_DIR / 'starter_foods.json').read_text())
-        self.assertEqual(Ingredient.objects.count(), len(data))
+    def test_starter_fixtures_are_valid(self):
+        """The shipped fixtures pass validation and import completely"""
+        total = 0
+        for fixture in ('starter_foods.json', 'starter_dishes.json'):
+            out = StringIO()
+            call_command('import_food_json', str(DATA_DIR / fixture), stdout=out)
+            total += len(json.loads((DATA_DIR / fixture).read_text()))
+        self.assertEqual(Ingredient.objects.count(), total)
 
     def test_schema_file_is_valid_json(self):
         schema = json.loads((DATA_DIR / 'food_schema.json').read_text())
