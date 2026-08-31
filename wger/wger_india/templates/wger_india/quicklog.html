@@ -11,13 +11,19 @@
             <span><i class="fas fa-clipboard-check"></i> {% translate "Daily report" %}
                 {% if report %}({{ report.date }}){% endif %}
             </span>
-            <form method="post" class="d-inline">
-                {% csrf_token %}
-                <input type="hidden" name="action" value="report_now">
-                <button type="submit" class="btn btn-sm btn-outline-primary">
-                    {% translate "Generate now" %}
-                </button>
-            </form>
+            <span>
+                <a href="{% url 'india:weekly-report' %}" target="_blank"
+                   class="btn btn-sm btn-outline-secondary">
+                    <i class="fas fa-file-export"></i> {% translate "Weekly report" %}
+                </a>
+                <form method="post" class="d-inline">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="report_now">
+                    <button type="submit" class="btn btn-sm btn-outline-primary">
+                        {% translate "Generate now" %}
+                    </button>
+                </form>
+            </span>
         </div>
         <div class="card-body">
             {% if report %}

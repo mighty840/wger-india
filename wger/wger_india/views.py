@@ -12,11 +12,15 @@ import datetime
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.exceptions import ValidationError
+from django.http import HttpResponse
 from django.shortcuts import (
     redirect,
     render,
 )
 from django.utils import timezone
+
+# wger
+from wger.wger_india.weekly_report import build_weekly_report
 
 # wger
 from wger.wger_india.models import (
@@ -143,3 +147,25 @@ def handle_quicklog_post(request, day):
         DailyGoalReport.generate(request.user, day)
 
     return redirect('india:quicklog')
+
+
+@login_required
+def weekly_report(request):
+    """
+    The weekly markdown report as plain text, ready to copy into a
+    Claude chat. ?week_ending=YYYY-MM-DD selects a past week;
+    ?download=1 serves it as a file.
+    """
+    week_ending = timezone.localdate()
+    if request.GET.get('week_ending'):
+        try:
+            week_ending = datetime.date.fromisoformat(request.GET['week_ending'])
+        except ValueError:
+            pass
+    markdown = build_weekly_report(request.user, week_ending)
+    response = HttpResponse(markdown, content_type='text/plain; charset=utf-8')
+    if request.GET.get('download'):
+        response['Content-Disposition'] = (
+            f'attachment; filename="weekly-report-{week_ending}.md"'
+        )
+    return response

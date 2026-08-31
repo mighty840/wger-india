@@ -141,6 +141,25 @@ class DailyGoalReportViewSet(viewsets.ReadOnlyModelViewSet):
         report = DailyGoalReport.generate(request.user, timezone.localdate())
         return Response(DailyGoalReportSerializer(report).data, status=201)
 
+    @action(detail=False, methods=['get'])
+    def weekly(self, request):
+        """The weekly markdown report (7 days ending ?week_ending, default today)"""
+        # wger
+        from wger.wger_india.weekly_report import build_weekly_report
+
+        week_ending = timezone.localdate()
+        if request.query_params.get('week_ending'):
+            try:
+                week_ending = datetime.date.fromisoformat(request.query_params['week_ending'])
+            except ValueError:
+                return Response({'detail': 'week_ending must be YYYY-MM-DD'}, status=400)
+        return Response(
+            {
+                'week_ending': week_ending,
+                'markdown': build_weekly_report(request.user, week_ending),
+            }
+        )
+
 
 class ActivityLogViewSet(viewsets.ModelViewSet):
     """Volleyball / stepper / steps entries of the requesting user"""

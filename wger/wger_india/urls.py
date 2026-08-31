@@ -13,4 +13,5 @@ from wger.wger_india import views
 
 urlpatterns = [
     path('', views.quicklog, name='quicklog'),
+    path('weekly-report/', views.weekly_report, name='weekly-report'),
 ]
