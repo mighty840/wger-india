@@ -52,6 +52,26 @@ estimates. Import once per instance:
 python3 manage.py import_food_json wger/wger_india/data/starter_foods.json
 ```
 
+## IFCT 2017 (full Indian food composition tables)
+
+`data/ifct2017.csv` bundles the composition table of the **Indian Food
+Composition Tables 2017** (T. Longvah et al., National Institute of
+Nutrition, Hyderabad) — 542 foods, per 100 g edible portion — as extracted
+by the [nodef/ifct2017](https://github.com/nodef/ifct2017) project (AGPL,
+same license family as wger). Energy is converted from kJ, food groups
+become ingredient categories, and Hindi vernacular names land in
+`common_name` so search finds e.g. "Ramdana".
+
+```bash
+python3 manage.py import_ifct              # bundled dataset
+python3 manage.py import_ifct my.csv       # or any IFCT/simple-format CSV
+python3 manage.py import_ifct --update     # refresh previously imported rows
+```
+
+Foods whose name collides with an existing custom/starter entry are left
+untouched; re-runs are idempotent. The simple format from the project spec
+(`name,energy_kcal,protein_g,carbs_g,fat_g[,fiber_g]`) is auto-detected.
+
 ## Tests
 
 ```bash
