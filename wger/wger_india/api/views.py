@@ -21,12 +21,14 @@ from rest_framework.response import Response
 # wger
 from wger.wger_india.models import (
     ActivityLog,
+    DailyGoalReport,
     FastingLog,
     IndiaProfile,
     WaterLog,
 )
 from wger.wger_india.api.serializers import (
     ActivityLogSerializer,
+    DailyGoalReportSerializer,
     FastingLogSerializer,
     IndiaProfileSerializer,
     WaterLogSerializer,
@@ -119,6 +121,25 @@ class FastingLogViewSet(viewsets.ModelViewSet):
             fast_end=end,
         )
         return Response(FastingLogSerializer(log).data, status=201)
+
+
+class DailyGoalReportViewSet(viewsets.ReadOnlyModelViewSet):
+    """Stored daily goal report cards of the requesting user"""
+
+    serializer_class = DailyGoalReportSerializer
+    permission_classes = [IsAuthenticated]
+    filterset_fields = {'date': ['exact', 'gte', 'lte']}
+
+    def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return DailyGoalReport.objects.none()
+        return DailyGoalReport.objects.filter(user=self.request.user)
+
+    @action(detail=False, methods=['post'])
+    def generate(self, request):
+        """Build (or rebuild) the report for today on demand"""
+        report = DailyGoalReport.generate(request.user, timezone.localdate())
+        return Response(DailyGoalReportSerializer(report).data, status=201)
 
 
 class ActivityLogViewSet(viewsets.ModelViewSet):

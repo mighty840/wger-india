@@ -57,8 +57,21 @@ class IndiaProfile(models.Model):
 
     daily_steps_target = models.PositiveIntegerField(default=10000)
 
+    gym_days = models.CharField(
+        max_length=20,
+        default='0,2,4',
+        help_text='Comma-separated weekday numbers (0=Monday) with a planned gym session',
+    )
+
     def __str__(self):
         return f'India profile for {self.user.username}'
+
+    @property
+    def gym_weekdays(self) -> set[int]:
+        try:
+            return {int(d) for d in self.gym_days.split(',') if d.strip() != ''}
+        except ValueError:
+            return {0, 2, 4}
 
     @classmethod
     def get_for(cls, user):
@@ -240,3 +253,49 @@ class ActivityLog(models.Model):
     def kcal_for_day(cls, user, day: datetime.date) -> int:
         result = cls.objects.filter(user=user, date=day).aggregate(total=models.Sum('kcal'))
         return result['total'] or 0
+
+
+class DailyGoalReport(models.Model):
+    """
+    The stored report card produced by the goal engine, one per user
+    and day. ``data`` holds the full structure from
+    ``goal_engine.build_report`` (per-goal status, values, remediation).
+    """
+
+    class Meta:
+        ordering = ['-date']
+        constraints = [
+            models.UniqueConstraint(fields=['user', 'date'], name='unique_report_per_day'),
+        ]
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='daily_goal_reports',
+    )
+
+    date = models.DateField()
+
+    data = models.JSONField()
+
+    created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'Report {self.date} for {self.user.username}: {self.overall}'
+
+    @property
+    def overall(self) -> str:
+        return self.data.get('overall', 'no_data')
+
+    @classmethod
+    def generate(cls, user, day: datetime.date):
+        """Build (or rebuild) and store the report for a day"""
+        # wger (imported here to avoid a circular import with goal_engine)
+        from wger.wger_india import goal_engine
+
+        report, _ = cls.objects.update_or_create(
+            user=user,
+            date=day,
+            defaults={'data': goal_engine.build_report(user, day)},
+        )
+        return report

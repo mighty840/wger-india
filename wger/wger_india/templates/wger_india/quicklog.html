@@ -5,6 +5,45 @@
 
 {% block content %}
 
+    {# ---------------- Daily report card ---------------- #}
+    <div class="card mb-4">
+        <div class="card-header d-flex justify-content-between align-items-center">
+            <span><i class="fas fa-clipboard-check"></i> {% translate "Daily report" %}
+                {% if report %}({{ report.date }}){% endif %}
+            </span>
+            <form method="post" class="d-inline">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="report_now">
+                <button type="submit" class="btn btn-sm btn-outline-primary">
+                    {% translate "Generate now" %}
+                </button>
+            </form>
+        </div>
+        <div class="card-body">
+            {% if report %}
+                <ul class="list-group list-group-flush">
+                    {% for name, goal in report.data.goals.items %}
+                        <li class="list-group-item px-0">
+                            <span class="badge me-2 {% if goal.status == 'green' %}bg-success{% elif goal.status == 'amber' %}bg-warning text-dark{% elif goal.status == 'red' %}bg-danger{% else %}bg-secondary{% endif %}">
+                                {{ name|capfirst }}
+                            </span>
+                            {{ goal.text }}
+                            {% if goal.remediation %}
+                                <div class="text-muted small mt-1">
+                                    <i class="fas fa-lightbulb"></i> {{ goal.remediation }}
+                                </div>
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="text-muted mb-0">
+                    {% translate "No report yet — it runs automatically every evening, or generate one now." %}
+                </p>
+            {% endif %}
+        </div>
+    </div>
+
     {# ---------------- Water ---------------- #}
     <div class="card mb-4">
         <div class="card-header d-flex justify-content-between">

@@ -263,6 +263,7 @@ router.register(
 router.register(r'water-log', india_api_views.WaterLogViewSet, basename='water-log')
 router.register(r'fasting-log', india_api_views.FastingLogViewSet, basename='fasting-log')
 router.register(r'activity-log', india_api_views.ActivityLogViewSet, basename='activity-log')
+router.register(r'daily-report', india_api_views.DailyGoalReportViewSet, basename='daily-report')
 
 #
 # Sitemaps

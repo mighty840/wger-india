@@ -21,6 +21,7 @@ from django.utils import timezone
 # wger
 from wger.wger_india.models import (
     ActivityLog,
+    DailyGoalReport,
     FastingLog,
     IndiaProfile,
     WaterLog,
@@ -64,6 +65,7 @@ def quicklog(request):
         else 0,
         'activity_entries': ActivityLog.objects.filter(user=request.user, date=day),
         'activity_kcal': ActivityLog.kcal_for_day(request.user, day),
+        'report': DailyGoalReport.objects.filter(user=request.user).first(),
     }
     return render(request, 'wger_india/quicklog.html', context)
 
@@ -136,5 +138,8 @@ def handle_quicklog_post(request, day):
         ActivityLog.objects.filter(
             user=request.user, pk=request.POST.get('pk'), date=day
         ).delete()
+
+    elif action == 'report_now':
+        DailyGoalReport.generate(request.user, day)
 
     return redirect('india:quicklog')

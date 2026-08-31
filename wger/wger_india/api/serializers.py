@@ -11,6 +11,7 @@ from rest_framework import serializers
 # wger
 from wger.wger_india.models import (
     ActivityLog,
+    DailyGoalReport,
     FastingLog,
     IndiaProfile,
     WaterLog,
@@ -51,6 +52,14 @@ class FastingLogSerializer(serializers.ModelSerializer):
         if fast_start and fast_end and fast_end <= fast_start:
             raise serializers.ValidationError('The fast must end after it starts')
         return data
+
+
+class DailyGoalReportSerializer(serializers.ModelSerializer):
+    overall = serializers.CharField(read_only=True)
+
+    class Meta:
+        model = DailyGoalReport
+        fields = ('id', 'date', 'overall', 'data', 'created')
 
 
 class ActivityLogSerializer(serializers.ModelSerializer):

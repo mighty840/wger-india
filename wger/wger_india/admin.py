@@ -11,6 +11,7 @@ from django.contrib import admin
 # wger
 from wger.wger_india.models import (
     ActivityLog,
+    DailyGoalReport,
     FastingLog,
     IndiaProfile,
     WaterLog,
@@ -38,3 +39,9 @@ class FastingLogAdmin(admin.ModelAdmin):
 class ActivityLogAdmin(admin.ModelAdmin):
     list_display = ('user', 'date', 'activity', 'duration_min', 'steps', 'kcal')
     list_filter = ('user', 'activity')
+
+
+@admin.register(DailyGoalReport)
+class DailyGoalReportAdmin(admin.ModelAdmin):
+    list_display = ('user', 'date', 'overall', 'created')
+    list_filter = ('user',)
