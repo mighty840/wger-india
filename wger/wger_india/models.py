@@ -14,6 +14,17 @@ from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils import timezone
 
+FALLBACK_WEIGHT_KG = 105
+
+
+def current_weight_kg(user) -> float:
+    """The user's latest logged body weight, with a sensible fallback"""
+    # wger (imported lazily to avoid an import cycle at app loading)
+    from wger.weight.models import WeightEntry
+
+    entry = WeightEntry.objects.filter(user=user).order_by('-date').first()
+    return float(entry.weight) if entry else FALLBACK_WEIGHT_KG
+
 
 class IndiaProfile(models.Model):
     """
@@ -149,3 +160,83 @@ class FastingLog(models.Model):
         if not durations:
             return None
         return sum(durations) / len(durations)
+
+
+class ActivityLog(models.Model):
+    """
+    A non-gym activity: volleyball (minutes), stepper (minutes) or
+    steps (count). The kcal estimate is computed on save from the user's
+    latest logged body weight unless given explicitly.
+    """
+
+    class Activity(models.TextChoices):
+        VOLLEYBALL = 'volleyball'
+        STEPPER = 'stepper'
+        STEPS = 'steps'
+
+    # kcal per kg body weight per hour (volleyball ≈300/h and stepper
+    # ≈480/h at 105 kg)
+    KCAL_PER_KG_HOUR = {
+        Activity.VOLLEYBALL: 2.9,
+        Activity.STEPPER: 4.6,
+    }
+
+    # kcal per step per kg body weight (≈0.057 kcal/step at 105 kg,
+    # ≈570 kcal for 10k steps)
+    KCAL_PER_STEP_KG = 0.00054
+
+    class Meta:
+        ordering = ['-date', '-id']
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE,
+        related_name='activity_logs',
+    )
+
+    date = models.DateField(default=timezone.localdate)
+
+    activity = models.CharField(max_length=20, choices=Activity.choices)
+
+    duration_min = models.PositiveIntegerField(null=True, blank=True)
+    """For volleyball and stepper"""
+
+    steps = models.PositiveIntegerField(null=True, blank=True)
+    """For the steps activity"""
+
+    kcal = models.PositiveIntegerField(blank=True, default=0)
+    """Estimated energy burned; computed on save when 0"""
+
+    def __str__(self):
+        return f'{self.activity} on {self.date}: {self.kcal} kcal'
+
+    def clean(self):
+        if self.activity == self.Activity.STEPS:
+            if not self.steps:
+                raise ValidationError('The steps activity needs a step count')
+        elif not self.duration_min:
+            raise ValidationError('This activity needs a duration in minutes')
+
+    def estimate_kcal(self) -> int:
+        weight = current_weight_kg(self.user)
+        if self.activity == self.Activity.STEPS:
+            return round((self.steps or 0) * weight * self.KCAL_PER_STEP_KG)
+        per_kg_hour = self.KCAL_PER_KG_HOUR[self.Activity(self.activity)]
+        return round((self.duration_min or 0) / 60 * weight * per_kg_hour)
+
+    def save(self, *args, **kwargs):
+        if not self.kcal:
+            self.kcal = self.estimate_kcal()
+        return super().save(*args, **kwargs)
+
+    @classmethod
+    def steps_for_day(cls, user, day: datetime.date) -> int:
+        result = cls.objects.filter(
+            user=user, date=day, activity=cls.Activity.STEPS
+        ).aggregate(total=models.Sum('steps'))
+        return result['total'] or 0
+
+    @classmethod
+    def kcal_for_day(cls, user, day: datetime.date) -> int:
+        result = cls.objects.filter(user=user, date=day).aggregate(total=models.Sum('kcal'))
+        return result['total'] or 0

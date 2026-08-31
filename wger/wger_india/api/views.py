@@ -20,11 +20,13 @@ from rest_framework.response import Response
 
 # wger
 from wger.wger_india.models import (
+    ActivityLog,
     FastingLog,
     IndiaProfile,
     WaterLog,
 )
 from wger.wger_india.api.serializers import (
+    ActivityLogSerializer,
     FastingLogSerializer,
     IndiaProfileSerializer,
     WaterLogSerializer,
@@ -117,3 +119,33 @@ class FastingLogViewSet(viewsets.ModelViewSet):
             fast_end=end,
         )
         return Response(FastingLogSerializer(log).data, status=201)
+
+
+class ActivityLogViewSet(viewsets.ModelViewSet):
+    """Volleyball / stepper / steps entries of the requesting user"""
+
+    serializer_class = ActivityLogSerializer
+    permission_classes = [IsAuthenticated]
+    filterset_fields = {'date': ['exact', 'gte', 'lte'], 'activity': ['exact']}
+
+    def get_queryset(self):
+        if getattr(self, 'swagger_fake_view', False):
+            return ActivityLog.objects.none()
+        return ActivityLog.objects.filter(user=self.request.user)
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+    @action(detail=False, methods=['get'])
+    def today(self, request):
+        """Today's steps vs target and total activity energy"""
+        day = timezone.localdate()
+        profile = IndiaProfile.get_for(request.user)
+        return Response(
+            {
+                'date': day,
+                'steps': ActivityLog.steps_for_day(request.user, day),
+                'steps_target': profile.daily_steps_target,
+                'activity_kcal': ActivityLog.kcal_for_day(request.user, day),
+            }
+        )

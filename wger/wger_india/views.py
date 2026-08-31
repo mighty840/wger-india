@@ -20,6 +20,7 @@ from django.utils import timezone
 
 # wger
 from wger.wger_india.models import (
+    ActivityLog,
     FastingLog,
     IndiaProfile,
     WaterLog,
@@ -55,6 +56,14 @@ def quicklog(request):
         'default_end': default_end,
         'weekly_average_hours': FastingLog.weekly_average_hours(request.user, day),
         'fasting_target_hours': profile.fasting_target_minutes / 60,
+        'steps_today': ActivityLog.steps_for_day(request.user, day),
+        'steps_percent': min(
+            100, round(ActivityLog.steps_for_day(request.user, day) / profile.daily_steps_target * 100)
+        )
+        if profile.daily_steps_target
+        else 0,
+        'activity_entries': ActivityLog.objects.filter(user=request.user, date=day),
+        'activity_kcal': ActivityLog.kcal_for_day(request.user, day),
     }
     return render(request, 'wger_india/quicklog.html', context)
 
@@ -105,5 +114,27 @@ def handle_quicklog_post(request, day):
 
     elif action == 'fast_delete':
         FastingLog.objects.filter(user=request.user, date=day).delete()
+
+    elif action == 'activity':
+        kind = request.POST.get('activity')
+        try:
+            value = int(request.POST.get('value', ''))
+        except ValueError:
+            value = 0
+        entry = ActivityLog(user=request.user, activity=kind)
+        if kind == ActivityLog.Activity.STEPS:
+            entry.steps = value
+        else:
+            entry.duration_min = value
+        try:
+            entry.full_clean()
+            entry.save()
+        except ValidationError as e:
+            messages.error(request, '; '.join(e.messages))
+
+    elif action == 'activity_delete':
+        ActivityLog.objects.filter(
+            user=request.user, pk=request.POST.get('pk'), date=day
+        ).delete()
 
     return redirect('india:quicklog')

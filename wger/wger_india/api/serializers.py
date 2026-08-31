@@ -10,6 +10,7 @@ from rest_framework import serializers
 
 # wger
 from wger.wger_india.models import (
+    ActivityLog,
     FastingLog,
     IndiaProfile,
     WaterLog,
@@ -49,4 +50,21 @@ class FastingLogSerializer(serializers.ModelSerializer):
         fast_end = data.get('fast_end', getattr(self.instance, 'fast_end', None))
         if fast_start and fast_end and fast_end <= fast_start:
             raise serializers.ValidationError('The fast must end after it starts')
+        return data
+
+
+class ActivityLogSerializer(serializers.ModelSerializer):
+    kcal = serializers.IntegerField(required=False, min_value=0)
+
+    class Meta:
+        model = ActivityLog
+        fields = ('id', 'date', 'activity', 'duration_min', 'steps', 'kcal')
+
+    def validate(self, data):
+        activity = data.get('activity', getattr(self.instance, 'activity', None))
+        if activity == ActivityLog.Activity.STEPS:
+            if not data.get('steps', getattr(self.instance, 'steps', None)):
+                raise serializers.ValidationError('The steps activity needs a step count')
+        elif not data.get('duration_min', getattr(self.instance, 'duration_min', None)):
+            raise serializers.ValidationError('This activity needs a duration in minutes')
         return data

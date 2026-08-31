@@ -10,6 +10,7 @@ from django.contrib import admin
 
 # wger
 from wger.wger_india.models import (
+    ActivityLog,
     FastingLog,
     IndiaProfile,
     WaterLog,
@@ -31,3 +32,9 @@ class WaterLogAdmin(admin.ModelAdmin):
 class FastingLogAdmin(admin.ModelAdmin):
     list_display = ('user', 'date', 'fast_start', 'fast_end')
     list_filter = ('user',)
+
+
+@admin.register(ActivityLog)
+class ActivityLogAdmin(admin.ModelAdmin):
+    list_display = ('user', 'date', 'activity', 'duration_min', 'steps', 'kcal')
+    list_filter = ('user', 'activity')
