@@ -88,6 +88,11 @@ class ImportFoodJsonTestCase(TestCase):
             self.import_json(dict(VALID_FOOD, energy_kcal=300))
         self.assertEqual(Ingredient.objects.count(), 0)
 
+    def test_tiny_energy_skips_kcal_check(self):
+        tea = {'name': 'Black tea (unsweetened)', 'energy_kcal': 1, 'protein_g': 0, 'carbs_g': 0.3, 'fat_g': 0}
+        self.import_json(tea)
+        self.assertEqual(Ingredient.objects.get().energy, 1)
+
     def test_kcal_consistency_override(self):
         out = self.import_json(dict(VALID_FOOD, energy_kcal=300), '--override-kcal-check')
         self.assertIn('imported anyway', out)
@@ -144,7 +149,12 @@ class ImportFoodJsonTestCase(TestCase):
     def test_starter_fixtures_are_valid(self):
         """The shipped fixtures pass validation and import completely"""
         total = 0
-        for fixture in ('starter_foods.json', 'starter_dishes.json', 'indian_dishes.json'):
+        for fixture in (
+            'starter_foods.json',
+            'starter_dishes.json',
+            'indian_dishes.json',
+            'everyday_basics.json',
+        ):
             out = StringIO()
             call_command('import_food_json', str(DATA_DIR / fixture), stdout=out)
             total += len(json.loads((DATA_DIR / fixture).read_text()))

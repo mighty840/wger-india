@@ -51,6 +51,8 @@ KNOWN_FIELDS = set(NUMERIC_FIELDS) | {
 }
 
 KCAL_TOLERANCE = 0.15
+KCAL_CHECK_MIN = 10
+"""Below this the 4/4/9 check is rounding noise (black tea, water)"""
 FUZZY_THRESHOLD = 0.85
 
 
@@ -132,7 +134,7 @@ class Command(BaseCommand):
             # kcal consistency (4/4/9 within ±15%)
             computed = atwater_kcal(item['protein_g'], item['carbs_g'], item['fat_g'])
             stated = float(item['energy_kcal'])
-            if computed > 0 and stated > 0:
+            if computed >= KCAL_CHECK_MIN and stated > 0:
                 deviation = (stated - computed) / computed
                 if abs(deviation) > KCAL_TOLERANCE:
                     msg = (
