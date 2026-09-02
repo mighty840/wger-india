@@ -1572,5 +1572,54 @@
     "grams": 330
    }
   ]
+ },
+ {
+  "name": "Tortilla wrap (Vollkorn)",
+  "energy_kcal": 292,
+  "protein_g": 9,
+  "carbs_g": 45,
+  "fat_g": 8.5,
+  "fiber_g": 7,
+  "sugar_g": 2,
+  "sat_fat_g": 1.2,
+  "source_name": "estimate (everyday basics, per 100g)",
+  "portions": [
+   {
+    "name": "wrap",
+    "grams": 62
+   }
+  ]
+ },
+ {
+  "name": "Tortilla wrap (plain)",
+  "energy_kcal": 300,
+  "protein_g": 8,
+  "carbs_g": 50,
+  "fat_g": 7.5,
+  "fiber_g": 3,
+  "sugar_g": 2,
+  "sat_fat_g": 1.0,
+  "source_name": "estimate (everyday basics, per 100g)",
+  "portions": [
+   {
+    "name": "wrap",
+    "grams": 62
+   }
+  ]
+ },
+ {
+  "name": "Omelette (2 eggs, with oil)",
+  "energy_kcal": 167,
+  "protein_g": 11,
+  "carbs_g": 1.5,
+  "fat_g": 13,
+  "sat_fat_g": 3.5,
+  "source_name": "estimate (everyday basics, per 100g)",
+  "portions": [
+   {
+    "name": "serving (2 eggs)",
+    "grams": 110
+   }
+  ]
  }
 ]
