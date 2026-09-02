@@ -90,8 +90,12 @@ class IngredientViewSet(viewsets.ReadOnlyModelViewSet):
     )
     filterset_class = IngredientFilterSet
 
-    # Strip default ordering ('name'), this makes the API/DB more performant
-    queryset = Ingredient.objects.prefetch_related('ingredientweightunit_set').order_by()
+    # Strip the default ordering ('name') for performance, but keep a stable
+    # pk order: offset pagination over an UNORDERED queryset is
+    # nondeterministic in Postgres — pages can overlap and silently drop
+    # rows (seen live: a 22-id id__in query returned two ids on both pages
+    # and two ids on neither, blanking diary entries in the frontend).
+    queryset = Ingredient.objects.prefetch_related('ingredientweightunit_set').order_by('pk')
     throttle_scope = 'ingredient_list'
 
     def get_throttles(self):
@@ -179,11 +183,11 @@ class IngredientInfoViewSet(IngredientViewSet):
     def get_queryset(self):
         """Optimize the queryset with select_related to avoid n+1 queries"""
 
-        # See IngredientViewSet.queryset for the rationale behind .order_by().
+        # See IngredientViewSet.queryset for the rationale behind .order_by('pk').
         return (
             Ingredient.objects.select_related('language', 'license', 'image')
             .prefetch_related('ingredientweightunit_set')
-            .order_by()
+            .order_by('pk')
         )
 
 

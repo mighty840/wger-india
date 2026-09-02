@@ -206,3 +206,35 @@ class QuicklogViewTestCase(TestCase):
         self.client.logout()
         response = self.client.get(self.url)
         self.assertEqual(response.status_code, 302)
+
+
+class IngredientPaginationTestCase(APITestCase):
+    """
+    Regression: offset pagination over the unordered ingredient queryset
+    dropped/duplicated rows between pages (blank diary entries in the UI).
+    """
+
+    fixtures = ('licenses.json', 'languages.json')
+
+    def test_id_in_pagination_is_stable_and_complete(self):
+        # wger
+        from wger.nutrition.models import Ingredient
+        from wger.utils.language import load_language
+
+        language = load_language('en')
+        ids = [
+            Ingredient.objects.create(
+                language=language, name=f'Pagination food {i:02d}',
+                energy=100, protein=5, carbohydrates=10, fat=3,
+            ).pk
+            for i in range(25)
+        ]
+        id_param = ','.join(str(i) for i in ids)
+        seen = []
+        for offset in (0, 20):
+            response = self.client.get(
+                f'/api/v2/ingredientinfo/?id__in={id_param}&limit=20&offset={offset}'
+            )
+            seen += [r['id'] for r in response.data['results']]
+        self.assertEqual(len(seen), 25)
+        self.assertEqual(sorted(seen), sorted(ids))
