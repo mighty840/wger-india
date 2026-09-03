@@ -78,8 +78,8 @@ class ActivityModelTestCase(TestCase):
 
     def test_daily_aggregates(self):
         day = timezone.localdate()
-        ActivityLog.objects.create(user=self.user, activity='steps', steps=4000)
-        ActivityLog.objects.create(user=self.user, activity='steps', steps=6000)
+        ActivityLog.objects.create(user=self.user, activity='steps', steps=4000, source='walking')
+        ActivityLog.objects.create(user=self.user, activity='steps', steps=6000, source='stepper')
         ActivityLog.objects.create(user=self.user, activity='stepper', duration_min=20)
         ActivityLog.objects.create(
             user=self.user,

@@ -127,16 +127,23 @@ def handle_quicklog_post(request, day):
             value = int(request.POST.get('value', ''))
         except ValueError:
             value = 0
-        entry = ActivityLog(user=request.user, activity=kind)
         if kind == ActivityLog.Activity.STEPS:
-            entry.steps = value
+            if value <= 0:
+                messages.error(request, 'Steps must be a positive number')
+            else:
+                # additive: quick-adds accumulate into the day's manual entry
+                existing = ActivityLog.objects.filter(
+                    user=request.user, date=day, activity=kind, source=''
+                ).first()
+                total = (existing.steps if existing else 0) + value
+                ActivityLog.log_steps(request.user, day, total)
         else:
-            entry.duration_min = value
-        try:
-            entry.full_clean()
-            entry.save()
-        except ValidationError as e:
-            messages.error(request, '; '.join(e.messages))
+            entry = ActivityLog(user=request.user, activity=kind, duration_min=value)
+            try:
+                entry.full_clean()
+                entry.save()
+            except ValidationError as e:
+                messages.error(request, '; '.join(e.messages))
 
     elif action == 'activity_delete':
         ActivityLog.objects.filter(

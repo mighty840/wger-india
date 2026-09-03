@@ -97,13 +97,73 @@ def compute_tdee(user, day: datetime.date, weight_kg: float) -> dict:
     }
 
 
+GOAL_KEYS = ('protein', 'deficit', 'water', 'fasting', 'activity')
+
+
+def flat_report(day: datetime.date, text: str, flag: str) -> dict:
+    """A report card for a day that is not judged (untracked / no logs)"""
+    return {
+        'date': day.isoformat(),
+        'weight_kg': None,
+        'tdee': None,
+        'intake': {'energy': 0, 'protein': 0, 'n_items': 0},
+        'goals': {
+            key: {'status': NO_DATA, 'value': None, 'target': None, 'text': text}
+            for key in GOAL_KEYS
+        },
+        'overall': NO_DATA,
+        'notes': [],
+        flag: True,
+    }
+
+
+def has_any_logs(user, day: datetime.date, intake: dict) -> bool:
+    # wger
+    from wger.weight.models import WeightEntry
+
+    return bool(
+        intake['n_items']
+        or WaterLog.total_for_day(user, day)
+        or FastingLog.objects.filter(user=user, date=day).exists()
+        or ActivityLog.objects.filter(user=user, date=day).exists()
+        or WorkoutSession.objects.filter(user=user, date=day).exists()
+        or WeightEntry.objects.filter(user=user, date__date=day).exists()
+    )
+
+
+def restaurant_notes(user, day: datetime.date) -> list[str]:
+    # wger
+    from wger.nutrition.models import LogItem
+
+    names = sorted(
+        {
+            item.ingredient.name
+            for item in LogItem.objects.filter(
+                plan__user=user,
+                datetime__date=day,
+                ingredient__india_meta__is_restaurant=True,
+            ).select_related('ingredient')
+        }
+    )
+    return [
+        f'Restaurant values used for {name} — the home-cooked version is likely 30-40% lower.'
+        for name in names
+    ]
+
+
 def build_report(user, day: datetime.date) -> dict:
     """The full report card for one day"""
     profile = IndiaProfile.get_for(user)
+    tracking_start = profile.tracking_start_date()
+    if tracking_start is None or day < tracking_start:
+        return flat_report(day, 'Not tracked yet — before tracking started.', 'not_tracked')
+
     weight = current_weight_kg(user)
     intake = nutrition_for_day(user, day)
-    energy_budget = compute_tdee(user, day, weight)
+    if not has_any_logs(user, day, intake):
+        return flat_report(day, 'No data logged this day.', 'no_logs')
 
+    energy_budget = compute_tdee(user, day, weight)
     goals = {
         'protein': protein_goal(user, day, profile, intake),
         'deficit': deficit_goal(user, day, profile, intake, energy_budget, weight),
@@ -119,6 +179,8 @@ def build_report(user, day: datetime.date) -> dict:
         'intake': intake,
         'goals': goals,
         'overall': overall,
+        'notes': restaurant_notes(user, day),
+        'tracking_start': tracking_start.isoformat(),
     }
 
 
@@ -216,34 +278,73 @@ def fasting_goal(user, day, profile):
 
 
 def activity_goal(user, day, profile, weight):
+    """
+    A day's activity goal is met by ANY of: a gym session, reaching the
+    step target, or volleyball. Gym sessions follow a rolling weekly
+    target (default 3 per Mon-Sun week, flexible days) — missing
+    sessions only raise a warning once the remaining days of the week
+    get tight.
+    """
     steps = ActivityLog.steps_for_day(user, day)
     steps_target = profile.daily_steps_target
-    is_gym_day = day.weekday() in profile.gym_weekdays
     has_session = WorkoutSession.objects.filter(user=user, date=day).exists()
+    has_volleyball = ActivityLog.objects.filter(
+        user=user, date=day, activity=ActivityLog.Activity.VOLLEYBALL
+    ).exists()
 
-    if is_gym_day:
-        if has_session:
-            return {
-                'status': GREEN,
-                'value': 'gym session',
-                'target': 'gym day',
-                'text': 'Gym session logged on a gym day.',
-            }
-        status = AMBER if steps >= steps_target else RED
+    week_start = day - datetime.timedelta(days=day.weekday())
+    sessions_done = WorkoutSession.objects.filter(
+        user=user, date__range=(week_start, day)
+    ).count()
+    target_sessions = profile.weekly_gym_target
+    week_info = f'{sessions_done}/{target_sessions} sessions this week'
+
+    if has_session:
+        bonus = f' Steps: {steps} (bonus, not judged).' if steps else ''
         return {
-            'status': status,
-            'value': f'{steps} steps',
-            'target': 'gym day',
-            'text': 'No gym session logged on a gym day.',
-            'remediation': remediation.missed_gym(steps, steps_target, weight),
+            'status': GREEN,
+            'value': 'gym session',
+            'target': f'{target_sessions}/week',
+            'text': f'Gym session logged ({week_info}).{bonus}',
+        }
+    if steps >= steps_target:
+        return {
+            'status': GREEN,
+            'value': steps,
+            'target': steps_target,
+            'text': f'{steps} steps — target reached ({week_info}).',
+        }
+    if has_volleyball:
+        return {
+            'status': GREEN,
+            'value': 'volleyball',
+            'target': f'{target_sessions}/week',
+            'text': f'Volleyball counts as the day\'s activity ({week_info}).',
         }
 
-    base = {'value': steps, 'target': steps_target}
-    if steps >= steps_target:
-        return base | {'status': GREEN, 'text': f'{steps} steps — target reached.'}
-    status = AMBER if steps >= 0.7 * steps_target else RED
+    needed = max(0, target_sessions - sessions_done)
+    days_left = 6 - day.weekday()  # days remaining in the week after today
+    base = {'value': steps, 'target': f'{target_sessions}/week'}
+    if needed == 0:
+        return base | {
+            'status': GREEN,
+            'text': f'Weekly gym target met ({week_info}) — rest day.',
+        }
+    if days_left > needed:
+        return base | {
+            'status': GREEN,
+            'text': f'No activity today; {week_info}, {days_left} days left — on track.',
+        }
+    if days_left == needed:
+        return base | {
+            'status': AMBER,
+            'text': f'{needed} session{"s" if needed != 1 else ""} left, exactly '
+            f'{days_left} day{"s" if days_left != 1 else ""} remaining this week.',
+            'remediation': remediation.week_sessions(needed, days_left, steps_target - steps, weight),
+        }
     return base | {
-        'status': status,
-        'text': f'Only {steps} of {steps_target} steps.',
-        'remediation': remediation.steps_short(steps_target - steps, weight),
+        'status': RED,
+        'text': f'{week_info} — {needed} needed but only {days_left} '
+        f'day{"s" if days_left != 1 else ""} left.',
+        'remediation': remediation.week_sessions(needed, days_left, steps_target - steps, weight),
     }

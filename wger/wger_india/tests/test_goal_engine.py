@@ -141,24 +141,29 @@ class GoalEngineTestCase(TestCase):
         self.assertIn('20:15', goal['remediation'])
 
     def test_activity_goal_gym_day(self):
+        # No session on a Wednesday: week still feasible -> green (on track)
+        make_fast(self.user, GYM_DAY)  # some log so the day is judged
         report = goal_engine.build_report(self.user, GYM_DAY)
-        self.assertEqual(report['goals']['activity']['status'], 'red')
+        self.assertEqual(report['goals']['activity']['status'], 'green')
+        self.assertIn('on track', report['goals']['activity']['text'])
 
         WorkoutSession.objects.create(user=self.user, date=GYM_DAY)
         report = goal_engine.build_report(self.user, GYM_DAY)
         self.assertEqual(report['goals']['activity']['status'], 'green')
+        self.assertIn('Gym session logged', report['goals']['activity']['text'])
 
     def test_activity_goal_off_day(self):
         ActivityLog.objects.create(user=self.user, activity='steps', steps=10000, date=OFF_DAY)
         report = goal_engine.build_report(self.user, OFF_DAY)
         self.assertEqual(report['goals']['activity']['status'], 'green')
 
+        # Thursday, 8000 steps, 0/3 sessions, exactly 3 days left -> amber
         ActivityLog.objects.all().delete()
         ActivityLog.objects.create(user=self.user, activity='steps', steps=8000, date=OFF_DAY)
         report = goal_engine.build_report(self.user, OFF_DAY)
         goal = report['goals']['activity']
         self.assertEqual(goal['status'], 'amber')
-        self.assertIn('2000 steps short', goal['remediation'])
+        self.assertIn('2000 steps today', goal['remediation'])
 
     def test_deficit_goal(self):
         # TDEE without activity: 2005 * 1.2 = 2406; eat 2000 → deficit 406: green

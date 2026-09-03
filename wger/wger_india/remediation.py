@@ -214,3 +214,17 @@ def steps_short(gap_steps: int, weight_kg: float) -> str:
         f'{gap_steps} steps short (~{kcal} kcal) — a {minutes}-minute walk or stepper '
         f'session before the evening closes it.'
     )
+
+
+def week_sessions(needed: int, days_left: int, gap_steps: int, weight_kg: float) -> str:
+    if days_left <= 0 or days_left < needed:
+        text = (
+            f'The weekly gym target cannot be fully met ({needed} session(s) needed, '
+            f'{days_left} day(s) left). Do what fits and reset next week — '
+        )
+    else:
+        text = (
+            f'{needed} session(s) in the remaining {days_left} day(s) — plan them now. '
+        )
+    kcal = round(max(gap_steps, 0) * weight_kg * ActivityLog.KCAL_PER_STEP_KG)
+    return text + f'alternatively {max(gap_steps, 0)} steps today (~{kcal} kcal) also counts.'

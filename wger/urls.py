@@ -336,6 +336,12 @@ urlpatterns += [
         name='userprofile-verify-email',
     ),
     path('api/v2/india-profile/', india_api_views.IndiaProfileView.as_view(), name='india-profile'),
+    path('api/v2/steps/', india_api_views.StepsView.as_view(), name='india-steps'),
+    path(
+        'api/v2/india/home-variant/',
+        india_api_views.HomeVariantView.as_view(),
+        name='india-home-variant',
+    ),
     path('api/v2/', include(router.urls)),
     path('api/v2/token/refresh', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/v2/token/verify', TokenVerifyView.as_view(), name='token_verify'),

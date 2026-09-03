@@ -11,6 +11,7 @@ from django.contrib import admin
 # wger
 from wger.wger_india.models import (
     ActivityLog,
+    IngredientMeta,
     DailyGoalReport,
     FastingLog,
     IndiaProfile,
@@ -45,3 +46,10 @@ class ActivityLogAdmin(admin.ModelAdmin):
 class DailyGoalReportAdmin(admin.ModelAdmin):
     list_display = ('user', 'date', 'overall', 'created')
     list_filter = ('user',)
+
+
+@admin.register(IngredientMeta)
+class IngredientMetaAdmin(admin.ModelAdmin):
+    list_display = ('ingredient', 'variant_of', 'owner', 'is_restaurant')
+    list_filter = ('is_restaurant',)
+    raw_id_fields = ('ingredient', 'variant_of')

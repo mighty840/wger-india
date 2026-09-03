@@ -8,6 +8,9 @@
 # Standard Library
 import datetime
 
+# Third Party
+from rest_framework.views import APIView
+
 # Django
 from django.utils import timezone
 
@@ -24,8 +27,10 @@ from wger.wger_india.models import (
     DailyGoalReport,
     FastingLog,
     IndiaProfile,
+    IngredientMeta,
     WaterLog,
 )
+from wger.wger_india.powersync import sync_shadow_ingredients
 from wger.wger_india.api.serializers import (
     ActivityLogSerializer,
     DailyGoalReportSerializer,
@@ -188,4 +193,91 @@ class ActivityLogViewSet(viewsets.ModelViewSet):
                 'steps_target': profile.daily_steps_target,
                 'activity_kcal': ActivityLog.kcal_for_day(request.user, day),
             }
+        )
+
+
+STEP_SOURCES = ('', 'stepper', 'treadmill', 'walking', 'other')
+
+
+class StepsView(APIView):
+    """
+    Low-friction step logging, e.g. from n8n pushing phone health data.
+
+    POST {"date": "YYYY-MM-DD" (optional, default today),
+          "steps": 8500,
+          "source": "walking" (optional: stepper|treadmill|walking|other)}
+    upserts — same date+source updates instead of duplicating.
+    GET ?date=YYYY-MM-DD returns the per-source breakdown and total.
+    """
+
+    permission_classes = [IsAuthenticated]
+
+    def parse_date(self, value):
+        if not value:
+            return timezone.localdate()
+        return datetime.date.fromisoformat(value)
+
+    def post(self, request):
+        try:
+            day = self.parse_date(request.data.get('date'))
+        except ValueError:
+            return Response({'detail': 'date must be YYYY-MM-DD'}, status=400)
+        try:
+            steps = int(request.data.get('steps'))
+        except (TypeError, ValueError):
+            return Response({'detail': 'steps must be an integer'}, status=400)
+        if steps < 0 or steps > 200000:
+            return Response({'detail': 'steps out of range'}, status=400)
+        source = request.data.get('source') or ''
+        if source not in STEP_SOURCES:
+            return Response(
+                {'detail': f'source must be one of {[s for s in STEP_SOURCES if s]}'}, status=400
+            )
+        ActivityLog.log_steps(request.user, day, steps, source)
+        return Response(self.day_summary(request.user, day), status=201)
+
+    def get(self, request):
+        try:
+            day = self.parse_date(request.query_params.get('date'))
+        except ValueError:
+            return Response({'detail': 'date must be YYYY-MM-DD'}, status=400)
+        return Response(self.day_summary(request.user, day))
+
+    def day_summary(self, user, day):
+        rows = ActivityLog.objects.filter(
+            user=user, date=day, activity=ActivityLog.Activity.STEPS
+        )
+        return {
+            'date': day,
+            'total': ActivityLog.steps_for_day(user, day),
+            'sources': {row.source or 'default': row.steps for row in rows},
+        }
+
+
+class HomeVariantView(APIView):
+    """
+    Create a personal "(home)" variant of any ingredient: same values
+    initially (edit in the admin/app afterwards), linked via variant_of,
+    ranked first in this user's food search.
+
+    POST {"ingredient": <id>, "name": "..." (optional)}
+    """
+
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+        # wger
+        from wger.nutrition.models import Ingredient
+
+        try:
+            ingredient = Ingredient.objects.get(pk=request.data.get('ingredient'))
+        except (Ingredient.DoesNotExist, ValueError, TypeError):
+            return Response({'detail': 'unknown ingredient id'}, status=400)
+        name = request.data.get('name') or f'{ingredient.name} (home)'
+        if Ingredient.objects.filter(name__iexact=name).exists():
+            return Response({'detail': f'"{name}" already exists'}, status=409)
+        clone = IngredientMeta.create_home_variant(request.user, ingredient, name=name)
+        sync_shadow_ingredients()
+        return Response(
+            {'id': clone.pk, 'name': clone.name, 'variant_of': ingredient.pk}, status=201
         )

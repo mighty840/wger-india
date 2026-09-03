@@ -13,3 +13,7 @@ class WgerIndiaConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'wger.wger_india'
     verbose_name = 'wger India extensions'
+
+    def ready(self):
+        # Register the weight-entry dedupe signal
+        from wger.wger_india import signals  # noqa: F401

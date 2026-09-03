@@ -72,6 +72,35 @@ Foods whose name collides with an existing custom/starter entry are left
 untouched; re-runs are idempotent. The simple format from the project spec
 (`name,energy_kcal,protein_g,carbs_g,fat_g[,fiber_g]`) is auto-detected.
 
+## Steps webhook (n8n)
+
+`POST /api/v2/steps/` upserts a day's step count — same date+source
+updates instead of duplicating, so n8n can push phone health exports
+repeatedly. Auth: any wger API auth (token/JWT/session).
+
+```json
+{"date": "2026-09-03", "steps": 8542, "source": "walking"}
+```
+
+- `date` optional (default: today), `source` optional — one of
+  `stepper`, `treadmill`, `walking`, `other` (empty = manual entry).
+  Sources are summed per day for the goal engine and reports.
+- `GET /api/v2/steps/?date=YYYY-MM-DD` returns the per-source breakdown.
+- Response: `{"date": ..., "total": ..., "sources": {...}}`
+
+## Home variants & restaurant flags
+
+- `POST /api/v2/india/home-variant/` with `{"ingredient": <id>}` clones
+  any entry as "<name> (home)" — same values, edit them in the admin —
+  linked via `variant_of` and ranked FIRST in your food search
+  (then your frequently-logged foods, then generic matches).
+- `manage.py setup_ingredient_meta <user>` seeds the corrected home
+  variants (methi paratha, ragi-wheat roti, dal fry) and flags all
+  restaurant-style entries; the daily report notes when restaurant
+  values were used ("home-cooked likely 30-40% lower").
+- `manage.py dedupe_weight_entries [--dry-run]` collapses duplicate
+  weigh-ins (a signal keeps them unique per day going forward).
+
 ## Tests
 
 ```bash

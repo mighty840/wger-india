@@ -88,10 +88,10 @@ class WeeklyReportTestCase(TestCase):
         )
         make_fast(self.user, day)
         markdown = build_weekly_report(self.user, WEEK_ENDING)
-        self.assertIn('| 2026-08-26 | — | — | — | 3.5 | 13.8 |', markdown)
-        # water green on exactly 1 of 7 days
-        self.assertIn('- Water: 1/7 days 🟡', markdown)
-        self.assertIn('- Fasting: 1/1 days ✅ (6 days without data)', markdown)
+        self.assertIn('| 2026-08-26 | — | — | 0 | — | 3.5 | 13.8 | — |', markdown)
+        # only the logged day is judged; the rest of the tracked days had no logs
+        self.assertIn('- Water: 1/1 tracked days ✅', markdown)
+        self.assertIn('- Fasting: 1/1 tracked days ✅', markdown)
 
     def test_workouts_planned_vs_done(self):
         WorkoutSession.objects.create(user=self.user, date=datetime.date(2026, 8, 24))
@@ -102,7 +102,7 @@ class WeeklyReportTestCase(TestCase):
             date=datetime.date(2026, 8, 25),
         )
         markdown = build_weekly_report(self.user, WEEK_ENDING)
-        self.assertIn('Gym sessions: 1 done / 3 planned (Mon, Wed, Fri).', markdown)
+        self.assertIn('Gym sessions: 1 done / 3 planned (rolling week, flexible days).', markdown)
         self.assertIn('volleyball 60 min', markdown)
 
     def test_uses_stored_reports(self):
@@ -124,7 +124,7 @@ class WeeklyReportTestCase(TestCase):
             },
         )
         markdown = build_weekly_report(self.user, WEEK_ENDING)
-        self.assertIn('| 2026-08-26 | 165.0 | 2000 | 400 |', markdown)
+        self.assertIn('| 2026-08-26 | 165.0 | 2000 | 0 | 400 |', markdown)
 
     def test_remediation_notes_included(self):
         day = datetime.date(2026, 8, 27)

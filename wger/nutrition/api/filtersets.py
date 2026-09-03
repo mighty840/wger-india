@@ -136,7 +136,7 @@ class IngredientFilterSet(filters.FilterSet):
             if len(value.split(maxsplit=1)) == 1 and _has_literal_trigram(value):
                 candidates |= contains
 
-            return (
+            results = (
                 queryset.filter(candidates)
                 .annotate(
                     word_similarity=TrigramStrictWordSimilarity(value, 'name'),
@@ -151,8 +151,52 @@ class IngredientFilterSet(filters.FilterSet):
                         output_field=IntegerField(),
                     ),
                 )
-                .order_by('-match_rank', '-similarity', 'name')
             )
+
+            # wger-india: personalise the ranking — the user's own home
+            # variants first, then foods they have logged before (by
+            # frequency), then generic matches by relevance.
+            user = getattr(getattr(self, 'request', None), 'user', None)
+            if user is not None and user.is_authenticated:
+                # Third Party
+                from django.db.models import (
+                    Count,
+                    OuterRef,
+                    Q as DQ,
+                    Subquery,
+                )
+                from django.db.models.functions import Coalesce
+
+                # wger
+                from wger.nutrition.models import LogItem
+
+                logged = (
+                    LogItem.objects.filter(plan__user=user, ingredient=OuterRef('pk'))
+                    .values('ingredient')
+                    .annotate(n=Count('id'))
+                    .values('n')
+                )
+                return (
+                    results.annotate(
+                        personal_rank=Case(
+                            When(DQ(india_meta__owner=user), then=Value(1)),
+                            default=Value(0),
+                            output_field=IntegerField(),
+                        ),
+                        user_log_count=Coalesce(
+                            Subquery(logged, output_field=IntegerField()), Value(0)
+                        ),
+                    )
+                    .order_by(
+                        '-personal_rank',
+                        '-user_log_count',
+                        '-match_rank',
+                        '-similarity',
+                        'name',
+                    )
+                )
+
+            return results.order_by('-match_rank', '-similarity', 'name')
         else:
             # Explicit order_by('name') because the viewset strips Meta.ordering.
             # Search results are small, so sorting them is cheap.
