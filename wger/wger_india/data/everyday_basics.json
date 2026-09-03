@@ -1621,5 +1621,21 @@
     "grams": 110
    }
   ]
+ },
+ {
+  "name": "Butterkaese",
+  "energy_kcal": 347,
+  "protein_g": 22,
+  "carbs_g": 0.5,
+  "fat_g": 28.5,
+  "sugar_g": 0.5,
+  "sat_fat_g": 19,
+  "source_name": "estimate (everyday basics, per 100g)",
+  "portions": [
+   {
+    "name": "slice",
+    "grams": 25
+   }
+  ]
  }
 ]
