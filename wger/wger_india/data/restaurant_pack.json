@@ -2416,5 +2416,319 @@
     "grams": 25
    }
   ]
+ },
+ {
+  "name": "Big Mac",
+  "energy_kcal": 239,
+  "protein_g": 12,
+  "carbs_g": 18.5,
+  "fat_g": 13,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 219
+   }
+  ]
+ },
+ {
+  "name": "Cheeseburger (McDonald’s)",
+  "energy_kcal": 262,
+  "protein_g": 13.5,
+  "carbs_g": 26,
+  "fat_g": 11.5,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 6,
+  "sat_fat_g": 5.5,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 119
+   }
+  ]
+ },
+ {
+  "name": "Hamburger (McDonald’s)",
+  "energy_kcal": 238,
+  "protein_g": 12.5,
+  "carbs_g": 29,
+  "fat_g": 8,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 6,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 105
+   }
+  ]
+ },
+ {
+  "name": "McChicken",
+  "energy_kcal": 266,
+  "protein_g": 10,
+  "carbs_g": 24,
+  "fat_g": 14.5,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 163
+   }
+  ]
+ },
+ {
+  "name": "Filet-o-Fish",
+  "energy_kcal": 237,
+  "protein_g": 10.5,
+  "carbs_g": 24,
+  "fat_g": 11,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1,
+  "sugar_g": 4,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 141
+   }
+  ]
+ },
+ {
+  "name": "McRib",
+  "energy_kcal": 234,
+  "protein_g": 11.5,
+  "carbs_g": 21,
+  "fat_g": 11.5,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.2,
+  "sugar_g": 6,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 209
+   }
+  ]
+ },
+ {
+  "name": "Chicken McNuggets",
+  "energy_kcal": 250,
+  "protein_g": 15,
+  "carbs_g": 15,
+  "fat_g": 14.5,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 0.8,
+  "sugar_g": 0.5,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "6 pieces",
+    "grams": 102
+   },
+   {
+    "name": "piece",
+    "grams": 17
+   }
+  ]
+ },
+ {
+  "name": "Pommes (McDonald’s)",
+  "energy_kcal": 283,
+  "protein_g": 3.3,
+  "carbs_g": 36,
+  "fat_g": 14,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 3.5,
+  "sugar_g": 0.5,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "medium",
+    "grams": 114
+   },
+   {
+    "name": "large",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "McFlurry",
+  "energy_kcal": 167,
+  "protein_g": 3.9,
+  "carbs_g": 26,
+  "fat_g": 5.3,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 0.5,
+  "sugar_g": 22,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 180
+   }
+  ]
+ },
+ {
+  "name": "Egg McMuffin",
+  "energy_kcal": 230,
+  "protein_g": 13,
+  "carbs_g": 23,
+  "fat_g": 9.5,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 2.5,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 128
+   }
+  ]
+ },
+ {
+  "name": "Crispy Chicken Wrap",
+  "energy_kcal": 226,
+  "protein_g": 10,
+  "carbs_g": 24,
+  "fat_g": 10,
+  "brand": "McDonald's",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 3,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "wrap",
+    "grams": 185
+   }
+  ]
+ },
+ {
+  "name": "Original Recipe Chicken",
+  "energy_kcal": 239,
+  "protein_g": 19,
+  "carbs_g": 7,
+  "fat_g": 15,
+  "brand": "KFC",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 0.5,
+  "sugar_g": 0.5,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Hot Wings",
+  "energy_kcal": 274,
+  "protein_g": 16,
+  "carbs_g": 12,
+  "fat_g": 18,
+  "brand": "KFC",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 0.8,
+  "sugar_g": 0.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Crispy Strips",
+  "energy_kcal": 223,
+  "protein_g": 18,
+  "carbs_g": 13,
+  "fat_g": 11,
+  "brand": "KFC",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 0.8,
+  "sugar_g": 0.5,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 45
+   }
+  ]
+ },
+ {
+  "name": "Zinger Burger",
+  "energy_kcal": 219,
+  "protein_g": 12.5,
+  "carbs_g": 22,
+  "fat_g": 9,
+  "brand": "KFC",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "burger",
+    "grams": 210
+   }
+  ]
+ },
+ {
+  "name": "Popcorn Chicken",
+  "energy_kcal": 276,
+  "protein_g": 15,
+  "carbs_g": 18,
+  "fat_g": 16,
+  "brand": "KFC",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 0.8,
+  "sugar_g": 0.5,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 114
+   }
+  ]
+ },
+ {
+  "name": "Twister Wrap",
+  "energy_kcal": 203,
+  "protein_g": 9.5,
+  "carbs_g": 21,
+  "fat_g": 9,
+  "brand": "KFC",
+  "source_name": "menu data (approx.)",
+  "fiber_g": 1.5,
+  "sugar_g": 3,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "wrap",
+    "grams": 245
+   }
+  ]
  }
 ]
