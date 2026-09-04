@@ -611,5 +611,381 @@
     "grams": 300
    }
   ]
+ },
+ {
+  "name": "Veg thali (complete plate)",
+  "energy_kcal": 168,
+  "protein_g": 6,
+  "carbs_g": 18,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3,
+  "sugar_g": 3,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "thali",
+    "grams": 600
+   }
+  ]
+ },
+ {
+  "name": "Non-veg thali (complete plate)",
+  "energy_kcal": 177,
+  "protein_g": 9,
+  "carbs_g": 15,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 2.5,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "thali",
+    "grams": 650
+   }
+  ]
+ },
+ {
+  "name": "Butter chicken (restaurant)",
+  "energy_kcal": 216,
+  "protein_g": 12,
+  "carbs_g": 6,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 3,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Palak paneer (restaurant)",
+  "energy_kcal": 182,
+  "protein_g": 8,
+  "carbs_g": 6,
+  "fat_g": 14,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 2,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Paneer tikka masala",
+  "energy_kcal": 199,
+  "protein_g": 9,
+  "carbs_g": 7,
+  "fat_g": 15,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 3,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Dal tadka (restaurant)",
+  "energy_kcal": 135,
+  "protein_g": 6,
+  "carbs_g": 12,
+  "fat_g": 7,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3,
+  "sugar_g": 1,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Chicken jalfrezi",
+  "energy_kcal": 161,
+  "protein_g": 13,
+  "carbs_g": 7,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 3,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Chicken madras",
+  "energy_kcal": 166,
+  "protein_g": 13,
+  "carbs_g": 6,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 2.5,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Chicken vindaloo",
+  "energy_kcal": 170,
+  "protein_g": 13,
+  "carbs_g": 7,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 2.5,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Lamb curry (restaurant)",
+  "energy_kcal": 193,
+  "protein_g": 14,
+  "carbs_g": 5,
+  "fat_g": 13,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 2,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Tandoori mixed grill",
+  "energy_kcal": 200,
+  "protein_g": 20,
+  "carbs_g": 3,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "platter",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Seekh kebab",
+  "energy_kcal": 242,
+  "protein_g": 16,
+  "carbs_g": 4,
+  "fat_g": 18,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 1,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Paneer pakora",
+  "energy_kcal": 256,
+  "protein_g": 10,
+  "carbs_g": 18,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 1.5,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Peshwari naan (coconut)",
+  "energy_kcal": 348,
+  "protein_g": 8,
+  "carbs_g": 52,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 14,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Cheese naan",
+  "energy_kcal": 335,
+  "protein_g": 11,
+  "carbs_g": 48,
+  "fat_g": 11,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Laccha paratha (restaurant)",
+  "energy_kcal": 322,
+  "protein_g": 7,
+  "carbs_g": 42,
+  "fat_g": 14,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3,
+  "sugar_g": 2,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Pilau rice (restaurant)",
+  "energy_kcal": 160,
+  "protein_g": 3,
+  "carbs_g": 28,
+  "fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   },
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Mango chutney",
+  "energy_kcal": 223,
+  "protein_g": 0.3,
+  "carbs_g": 55,
+  "fat_g": 0.2,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 50,
+  "portions": [
+   {
+    "name": "tbsp",
+    "grams": 20
+   }
+  ]
+ },
+ {
+  "name": "Mint yoghurt dip",
+  "energy_kcal": 59,
+  "protein_g": 3,
+  "carbs_g": 5,
+  "fat_g": 3,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 4,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "tbsp",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Kachumber (onion salad)",
+  "energy_kcal": 31,
+  "protein_g": 1,
+  "carbs_g": 6,
+  "fat_g": 0.3,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 3,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Achar (Indian pickle)",
+  "energy_kcal": 202,
+  "protein_g": 2,
+  "carbs_g": 8,
+  "fat_g": 18,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 2,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "tsp",
+    "grams": 10
+   }
+  ]
+ },
+ {
+  "name": "Mango lassi",
+  "energy_kcal": 88,
+  "protein_g": 2.5,
+  "carbs_g": 14,
+  "fat_g": 2.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 13,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 300
+   }
+  ]
  }
 ]
