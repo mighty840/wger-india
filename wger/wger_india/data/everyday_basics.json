@@ -1839,5 +1839,328 @@
     "grams": 350
    }
   ]
+ },
+ {
+  "name": "Butterbrezel (Brezel mit Butter)",
+  "energy_kcal": 344,
+  "protein_g": 9,
+  "carbs_g": 50,
+  "fat_g": 12,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 2,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 95
+   }
+  ]
+ },
+ {
+  "name": "Franzbrötchen",
+  "energy_kcal": 404,
+  "protein_g": 6,
+  "carbs_g": 50,
+  "fat_g": 20,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 18,
+  "sat_fat_g": 12,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Laugenstange",
+  "energy_kcal": 296,
+  "protein_g": 10,
+  "carbs_g": 55,
+  "fat_g": 4,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.8,
+  "sugar_g": 2,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 85
+   }
+  ]
+ },
+ {
+  "name": "Käselaugenstange / Käsebrezel",
+  "energy_kcal": 340,
+  "protein_g": 13,
+  "carbs_g": 45,
+  "fat_g": 12,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.2,
+  "sugar_g": 2,
+  "sat_fat_g": 6.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Schokocroissant (pain au chocolat)",
+  "energy_kcal": 436,
+  "protein_g": 7,
+  "carbs_g": 48,
+  "fat_g": 24,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 16,
+  "sat_fat_g": 14,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 75
+   }
+  ]
+ },
+ {
+  "name": "Puddingteilchen",
+  "energy_kcal": 348,
+  "protein_g": 6,
+  "carbs_g": 45,
+  "fat_g": 16,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 1.5,
+  "sugar_g": 20,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Nussschnecke",
+  "energy_kcal": 418,
+  "protein_g": 7,
+  "carbs_g": 48,
+  "fat_g": 22,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 22,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Zimtschnecke",
+  "energy_kcal": 394,
+  "protein_g": 6,
+  "carbs_g": 52,
+  "fat_g": 18,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 24,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Apfeltasche",
+  "energy_kcal": 328,
+  "protein_g": 4,
+  "carbs_g": 42,
+  "fat_g": 16,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 18,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Berliner (jelly donut)",
+  "energy_kcal": 342,
+  "protein_g": 6,
+  "carbs_g": 48,
+  "fat_g": 14,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 1.5,
+  "sugar_g": 22,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Quarkbällchen",
+  "energy_kcal": 350,
+  "protein_g": 7,
+  "carbs_g": 40,
+  "fat_g": 18,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 1,
+  "sugar_g": 16,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Mohnschnecke",
+  "energy_kcal": 392,
+  "protein_g": 8,
+  "carbs_g": 45,
+  "fat_g": 20,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 20,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 110
+   }
+  ]
+ },
+ {
+  "name": "Butterhörnchen",
+  "energy_kcal": 359,
+  "protein_g": 8,
+  "carbs_g": 48,
+  "fat_g": 15,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 8,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 65
+   }
+  ]
+ },
+ {
+  "name": "Rosinenbrötchen",
+  "energy_kcal": 276,
+  "protein_g": 8,
+  "carbs_g": 52,
+  "fat_g": 4,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2.5,
+  "sugar_g": 14,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 70
+   }
+  ]
+ },
+ {
+  "name": "Streuselkuchen",
+  "energy_kcal": 376,
+  "protein_g": 6,
+  "carbs_g": 52,
+  "fat_g": 16,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 1.5,
+  "sugar_g": 26,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Bienenstich",
+  "energy_kcal": 350,
+  "protein_g": 7,
+  "carbs_g": 40,
+  "fat_g": 18,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 1.2,
+  "sugar_g": 24,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Butterkuchen",
+  "energy_kcal": 386,
+  "protein_g": 6,
+  "carbs_g": 50,
+  "fat_g": 18,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 1.2,
+  "sugar_g": 24,
+  "sat_fat_g": 11,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Belegtes Brötchen (Käse)",
+  "energy_kcal": 272,
+  "protein_g": 11,
+  "carbs_g": 30,
+  "fat_g": 12,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 2.5,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 130
+   }
+  ]
+ },
+ {
+  "name": "Belegtes Brötchen (Schinken)",
+  "energy_kcal": 240,
+  "protein_g": 12,
+  "carbs_g": 30,
+  "fat_g": 8,
+  "source_name": "estimate (bakery, per 100g)",
+  "fiber_g": 2,
+  "sugar_g": 2.5,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 130
+   }
+  ]
  }
 ]
