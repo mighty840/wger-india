@@ -1886,5 +1886,535 @@
     "grams": 15
    }
   ]
+ },
+ {
+  "name": "Gyros (meat only)",
+  "energy_kcal": 234,
+  "protein_g": 16,
+  "carbs_g": 2,
+  "fat_g": 18,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 0.5,
+  "sat_fat_g": 6.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Gyros Teller (fries and tzatziki)",
+  "energy_kcal": 221,
+  "protein_g": 12,
+  "carbs_g": 14,
+  "fat_g": 13,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 1.5,
+  "sat_fat_g": 4.5,
+  "portions": [
+   {
+    "name": "teller",
+    "grams": 550
+   }
+  ]
+ },
+ {
+  "name": "Gyros Pita",
+  "energy_kcal": 231,
+  "protein_g": 11,
+  "carbs_g": 22,
+  "fat_g": 11,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.8,
+  "sugar_g": 2,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "pita",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Gyros Metaxa (overbaked with cheese)",
+  "energy_kcal": 216,
+  "protein_g": 12,
+  "carbs_g": 6,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 2,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 450
+   }
+  ]
+ },
+ {
+  "name": "Tzatziki",
+  "energy_kcal": 111,
+  "protein_g": 4,
+  "carbs_g": 3.5,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.4,
+  "sugar_g": 2.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 80
+   },
+   {
+    "name": "tbsp",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Souvlaki (skewer)",
+  "energy_kcal": 178,
+  "protein_g": 20,
+  "carbs_g": 2,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 0.5,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "skewer",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Bifteki (cheese-stuffed)",
+  "energy_kcal": 233,
+  "protein_g": 16,
+  "carbs_g": 4,
+  "fat_g": 17,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 1,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Moussaka",
+  "energy_kcal": 172,
+  "protein_g": 8,
+  "carbs_g": 8,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.8,
+  "sugar_g": 3,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Greek salad (with feta and oil)",
+  "energy_kcal": 113,
+  "protein_g": 4,
+  "carbs_g": 4,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.8,
+  "sugar_g": 3,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Dolmades (stuffed vine leaves)",
+  "energy_kcal": 126,
+  "protein_g": 3,
+  "carbs_g": 15,
+  "fat_g": 6,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 1.5,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 40
+   }
+  ]
+ },
+ {
+  "name": "Feta saganaki (baked)",
+  "energy_kcal": 246,
+  "protein_g": 13,
+  "carbs_g": 8,
+  "fat_g": 18,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 1.5,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Grilled octopus",
+  "energy_kcal": 109,
+  "protein_g": 14,
+  "carbs_g": 2,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 0,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Lamb chops (grilled)",
+  "energy_kcal": 232,
+  "protein_g": 22,
+  "carbs_g": 0,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 0,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Kritharaki (orzo, cooked)",
+  "energy_kcal": 136,
+  "protein_g": 4.5,
+  "carbs_g": 25,
+  "fat_g": 2,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 1,
+  "sat_fat_g": 0.5,
+  "portions": [
+   {
+    "name": "katori",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Ouzo",
+  "energy_kcal": 230,
+  "protein_g": 0.1,
+  "carbs_g": 1,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 1,
+  "portions": [
+   {
+    "name": "shot (2cl)",
+    "grams": 20
+   }
+  ]
+ },
+ {
+  "name": "Hamburger (classic)",
+  "energy_kcal": 247,
+  "protein_g": 12,
+  "carbs_g": 25,
+  "fat_g": 11,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Cheeseburger",
+  "energy_kcal": 265,
+  "protein_g": 13,
+  "carbs_g": 24,
+  "fat_g": 13,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 5,
+  "sat_fat_g": 5.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 170
+   }
+  ]
+ },
+ {
+  "name": "Double cheeseburger",
+  "energy_kcal": 276,
+  "protein_g": 15,
+  "carbs_g": 18,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 4,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 220
+   }
+  ]
+ },
+ {
+  "name": "Bacon cheeseburger",
+  "energy_kcal": 288,
+  "protein_g": 14,
+  "carbs_g": 22,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 4.5,
+  "sat_fat_g": 6.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Chicken burger (crispy)",
+  "energy_kcal": 252,
+  "protein_g": 12,
+  "carbs_g": 24,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Veggie burger",
+  "energy_kcal": 221,
+  "protein_g": 9,
+  "carbs_g": 26,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3.5,
+  "sugar_g": 4.5,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Hot dog",
+  "energy_kcal": 263,
+  "protein_g": 10,
+  "carbs_g": 22,
+  "fat_g": 15,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 5,
+  "sat_fat_g": 5.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Sweet potato fries",
+  "energy_kcal": 188,
+  "protein_g": 2,
+  "carbs_g": 27,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3,
+  "sugar_g": 7,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Curly fries",
+  "energy_kcal": 249,
+  "protein_g": 3,
+  "carbs_g": 30,
+  "fat_g": 13,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3,
+  "sugar_g": 1,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Onion rings",
+  "energy_kcal": 292,
+  "protein_g": 4,
+  "carbs_g": 33,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 4,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 100
+   },
+   {
+    "name": "piece",
+    "grams": 15
+   }
+  ]
+ },
+ {
+  "name": "Chicken nuggets",
+  "energy_kcal": 233,
+  "protein_g": 14,
+  "carbs_g": 15,
+  "fat_g": 13,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 0.5,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 18
+   }
+  ]
+ },
+ {
+  "name": "Chicken wings (fried)",
+  "energy_kcal": 227,
+  "protein_g": 18,
+  "carbs_g": 5,
+  "fat_g": 15,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 0.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Coleslaw",
+  "energy_kcal": 135,
+  "protein_g": 1.2,
+  "carbs_g": 10,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 8,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Milkshake (vanilla)",
+  "energy_kcal": 113,
+  "protein_g": 3.3,
+  "carbs_g": 17,
+  "fat_g": 3.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.2,
+  "sugar_g": 16,
+  "sat_fat_g": 2.2,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "BBQ sauce",
+  "energy_kcal": 128,
+  "protein_g": 1,
+  "carbs_g": 30,
+  "fat_g": 0.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 25,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Burger sauce",
+  "energy_kcal": 314,
+  "protein_g": 1,
+  "carbs_g": 10,
+  "fat_g": 30,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 7,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 25
+   }
+  ]
  }
 ]
