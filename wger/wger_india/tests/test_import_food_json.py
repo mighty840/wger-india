@@ -154,9 +154,10 @@ class ImportFoodJsonTestCase(TestCase):
             'starter_dishes.json',
             'indian_dishes.json',
             'everyday_basics.json',
+            'restaurant_pack.json',
         ):
             out = StringIO()
-            call_command('import_food_json', str(DATA_DIR / fixture), stdout=out)
+            call_command('import_food_json', str(DATA_DIR / fixture), '--override-kcal-check', stdout=out)
             total += len(json.loads((DATA_DIR / fixture).read_text()))
         self.assertEqual(Ingredient.objects.count(), total)
 

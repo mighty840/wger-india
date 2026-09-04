@@ -1637,5 +1637,207 @@
     "grams": 25
    }
   ]
+ },
+ {
+  "name": "Pizza Salami",
+  "energy_kcal": 276,
+  "protein_g": 12,
+  "carbs_g": 30,
+  "fat_g": 12,
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 410
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 51
+   }
+  ]
+ },
+ {
+  "name": "Pizza Margherita",
+  "energy_kcal": 257,
+  "protein_g": 11,
+  "carbs_g": 33,
+  "fat_g": 9,
+  "fiber_g": 2,
+  "sugar_g": 3.5,
+  "sat_fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 400
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Pizza Prosciutto (ham)",
+  "energy_kcal": 258,
+  "protein_g": 12,
+  "carbs_g": 30,
+  "fat_g": 10,
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 420
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 53
+   }
+  ]
+ },
+ {
+  "name": "Pizza Funghi",
+  "energy_kcal": 241,
+  "protein_g": 10,
+  "carbs_g": 30,
+  "fat_g": 9,
+  "fiber_g": 2.2,
+  "sugar_g": 3,
+  "sat_fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 420
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 53
+   }
+  ]
+ },
+ {
+  "name": "Pizza Tonno",
+  "energy_kcal": 267,
+  "protein_g": 13,
+  "carbs_g": 29,
+  "fat_g": 11,
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 430
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 54
+   }
+  ]
+ },
+ {
+  "name": "Pizza Hawaii",
+  "energy_kcal": 253,
+  "protein_g": 11,
+  "carbs_g": 32,
+  "fat_g": 9,
+  "fiber_g": 2,
+  "sugar_g": 5,
+  "sat_fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 430
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 54
+   }
+  ]
+ },
+ {
+  "name": "Pizza Quattro Formaggi",
+  "energy_kcal": 285,
+  "protein_g": 13,
+  "carbs_g": 29,
+  "fat_g": 13,
+  "fiber_g": 1.8,
+  "sugar_g": 3,
+  "sat_fat_g": 7,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 400
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Pizza Verdure (veggie)",
+  "energy_kcal": 234,
+  "protein_g": 9.5,
+  "carbs_g": 31,
+  "fat_g": 8,
+  "fiber_g": 2.8,
+  "sugar_g": 3.5,
+  "sat_fat_g": 3.5,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "pizza (whole)",
+    "grams": 430
+   },
+   {
+    "name": "slice (1/8)",
+    "grams": 54
+   }
+  ]
+ },
+ {
+  "name": "Doener kebab (in bread)",
+  "energy_kcal": 205,
+  "protein_g": 12,
+  "carbs_g": 19,
+  "fat_g": 9,
+  "fiber_g": 2,
+  "sugar_g": 2.5,
+  "sat_fat_g": 3.5,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "doener",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Falafel dueruem (wrap)",
+  "energy_kcal": 222,
+  "protein_g": 8,
+  "carbs_g": 25,
+  "fat_g": 10,
+  "fiber_g": 4,
+  "sugar_g": 2.5,
+  "sat_fat_g": 1.5,
+  "source_name": "estimate (restaurant style)",
+  "portions": [
+   {
+    "name": "dueruem",
+    "grams": 350
+   }
+  ]
  }
 ]

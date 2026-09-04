@@ -1,0 +1,615 @@
+[
+ {
+  "name": "Apfelsaft",
+  "energy_kcal": 43,
+  "protein_g": 0.1,
+  "carbs_g": 10.5,
+  "fat_g": 0.1,
+  "source_name": "product label (DE)",
+  "sugar_g": 10,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Apfelsaftschorle",
+  "energy_kcal": 22,
+  "protein_g": 0.1,
+  "carbs_g": 5.5,
+  "fat_g": 0,
+  "source_name": "product label (DE)",
+  "sugar_g": 5.3,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Orange soda (Fanta type)",
+  "energy_kcal": 38,
+  "protein_g": 0,
+  "carbs_g": 9.5,
+  "fat_g": 0,
+  "source_name": "product label (DE)",
+  "sugar_g": 9.5,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Mineral water (sparkling)",
+  "energy_kcal": 0,
+  "protein_g": 0,
+  "carbs_g": 0,
+  "fat_g": 0,
+  "source_name": "product label (DE)",
+  "sugar_g": 0,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Bruschetta",
+  "energy_kcal": 240,
+  "protein_g": 7,
+  "carbs_g": 35,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Insalata Caprese",
+  "energy_kcal": 200,
+  "protein_g": 11,
+  "carbs_g": 3,
+  "fat_g": 16,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 3,
+  "sat_fat_g": 8,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Antipasti misti (grilled veg in oil)",
+  "energy_kcal": 162,
+  "protein_g": 3,
+  "carbs_g": 6,
+  "fat_g": 14,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 3,
+  "sugar_g": 4,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Garlic bread",
+  "energy_kcal": 320,
+  "protein_g": 8,
+  "carbs_g": 45,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 2,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "slice",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Insalata mista (with dressing)",
+  "energy_kcal": 67,
+  "protein_g": 1.5,
+  "carbs_g": 4,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Insalata con pollo",
+  "energy_kcal": 136,
+  "protein_g": 12,
+  "carbs_g": 4,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Minestrone",
+  "energy_kcal": 60,
+  "protein_g": 2.5,
+  "carbs_g": 8,
+  "fat_g": 2,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 3,
+  "sat_fat_g": 0.4,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Tomatensuppe",
+  "energy_kcal": 61,
+  "protein_g": 1.5,
+  "carbs_g": 7,
+  "fat_g": 3,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 5,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Spaghetti Napoli",
+  "energy_kcal": 144,
+  "protein_g": 5,
+  "carbs_g": 22,
+  "fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Spaghetti Bolognese",
+  "energy_kcal": 166,
+  "protein_g": 8,
+  "carbs_g": 20,
+  "fat_g": 6,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 2.2,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Spaghetti Carbonara",
+  "energy_kcal": 215,
+  "protein_g": 9,
+  "carbs_g": 20,
+  "fat_g": 11,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 2,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Spaghetti Aglio e Olio",
+  "energy_kcal": 201,
+  "protein_g": 5,
+  "carbs_g": 25,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.8,
+  "sugar_g": 1.5,
+  "sat_fat_g": 1.4,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Penne Arrabbiata",
+  "energy_kcal": 157,
+  "protein_g": 5,
+  "carbs_g": 23,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.2,
+  "sugar_g": 3.5,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Lasagne",
+  "energy_kcal": 169,
+  "protein_g": 9,
+  "carbs_g": 13,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 3,
+  "sat_fat_g": 4.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 450
+   }
+  ]
+ },
+ {
+  "name": "Tortellini alla panna",
+  "energy_kcal": 228,
+  "protein_g": 8,
+  "carbs_g": 22,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 2.5,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Gnocchi al Gorgonzola",
+  "energy_kcal": 232,
+  "protein_g": 7,
+  "carbs_g": 24,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 2,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Ravioli (spinach-ricotta)",
+  "energy_kcal": 188,
+  "protein_g": 7,
+  "carbs_g": 22,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 2.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Risotto ai funghi",
+  "energy_kcal": 150,
+  "protein_g": 4,
+  "carbs_g": 20,
+  "fat_g": 6,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.2,
+  "sugar_g": 1.5,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Scaloppine al limone",
+  "energy_kcal": 190,
+  "protein_g": 20,
+  "carbs_g": 5,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 1,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Saltimbocca alla Romana",
+  "energy_kcal": 200,
+  "protein_g": 21,
+  "carbs_g": 2,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.2,
+  "sugar_g": 0.5,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Calamari fritti",
+  "energy_kcal": 218,
+  "protein_g": 12,
+  "carbs_g": 20,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Gamberoni aglio e olio",
+  "energy_kcal": 149,
+  "protein_g": 15,
+  "carbs_g": 2,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 0.5,
+  "sat_fat_g": 1.4,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Calzone",
+  "energy_kcal": 255,
+  "protein_g": 11,
+  "carbs_g": 28,
+  "fat_g": 11,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.8,
+  "sugar_g": 3,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 450
+   }
+  ]
+ },
+ {
+  "name": "Focaccia / pizza bread",
+  "energy_kcal": 310,
+  "protein_g": 8,
+  "carbs_g": 47,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 2,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Tiramisu",
+  "energy_kcal": 293,
+  "protein_g": 5,
+  "carbs_g": 30,
+  "fat_g": 17,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 22,
+  "sat_fat_g": 10,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Panna cotta",
+  "energy_kcal": 262,
+  "protein_g": 3,
+  "carbs_g": 22,
+  "fat_g": 18,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.2,
+  "sugar_g": 20,
+  "sat_fat_g": 12,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 120
+   }
+  ]
+ },
+ {
+  "name": "Gelato",
+  "energy_kcal": 193,
+  "protein_g": 4,
+  "carbs_g": 24,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.3,
+  "sugar_g": 22,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "scoop",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Beer, lager (draft)",
+  "energy_kcal": 43,
+  "protein_g": 0.5,
+  "carbs_g": 3.5,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 0.5,
+  "portions": [
+   {
+    "name": "glass (0.5l)",
+    "grams": 500
+   },
+   {
+    "name": "glass (0.3l)",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Red wine",
+  "energy_kcal": 85,
+  "protein_g": 0.1,
+  "carbs_g": 2.6,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 0.6,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "White wine",
+  "energy_kcal": 82,
+  "protein_g": 0.1,
+  "carbs_g": 2.4,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 0.9,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Prosecco",
+  "energy_kcal": 75,
+  "protein_g": 0.1,
+  "carbs_g": 1.5,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 1.5,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Aperol Spritz",
+  "energy_kcal": 54,
+  "protein_g": 0.1,
+  "carbs_g": 6,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 6,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Hugo (elderflower spritz)",
+  "energy_kcal": 46,
+  "protein_g": 0.1,
+  "carbs_g": 5,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 5,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 300
+   }
+  ]
+ }
+]
