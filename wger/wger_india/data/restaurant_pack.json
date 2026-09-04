@@ -989,7 +989,7 @@
   ]
  },
  {
-  "name": "Dueruem doener (wrap)",
+  "name": "Dürüm Döner (wrap)",
   "energy_kcal": 218,
   "protein_g": 12,
   "carbs_g": 20,
@@ -1000,13 +1000,13 @@
   "sat_fat_g": 4,
   "portions": [
    {
-    "name": "dueruem",
+    "name": "dürüm",
     "grams": 400
    }
   ]
  },
  {
-  "name": "Chicken doener (in bread)",
+  "name": "Chicken Döner (in bread)",
   "energy_kcal": 191,
   "protein_g": 13,
   "carbs_g": 19,
@@ -1017,13 +1017,13 @@
   "sat_fat_g": 2,
   "portions": [
    {
-    "name": "doener",
+    "name": "döner",
     "grams": 350
    }
   ]
  },
  {
-  "name": "Doener teller (with fries and salad)",
+  "name": "Döner Teller (with fries and salad)",
   "energy_kcal": 203,
   "protein_g": 11,
   "carbs_g": 15,
@@ -1040,7 +1040,7 @@
   ]
  },
  {
-  "name": "Doener box (fries and meat)",
+  "name": "Döner Box (fries and meat)",
   "energy_kcal": 224,
   "protein_g": 9,
   "carbs_g": 20,
@@ -1108,7 +1108,7 @@
   ]
  },
  {
-  "name": "Koefte (grilled)",
+  "name": "Köfte (grilled)",
   "energy_kcal": 232,
   "protein_g": 14,
   "carbs_g": 8,
@@ -1146,7 +1146,7 @@
   ]
  },
  {
-  "name": "Halloumi dueruem",
+  "name": "Halloumi Dürüm",
   "energy_kcal": 245,
   "protein_g": 11,
   "carbs_g": 21,
@@ -1157,7 +1157,7 @@
   "sat_fat_g": 6,
   "portions": [
    {
-    "name": "dueruem",
+    "name": "dürüm",
     "grams": 400
    }
   ]
@@ -1179,7 +1179,7 @@
   ]
  },
  {
-  "name": "Boerek (spinach and cheese)",
+  "name": "Börek (spinach and cheese)",
   "energy_kcal": 270,
   "protein_g": 8,
   "carbs_g": 28,
@@ -1229,7 +1229,7 @@
   ]
  },
  {
-  "name": "Herb sauce (Kraeutersauce)",
+  "name": "Herb sauce (Kräutersauce)",
   "energy_kcal": 251,
   "protein_g": 1.5,
   "carbs_g": 5,
@@ -1275,6 +1275,615 @@
    {
     "name": "piece",
     "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Gebratene Nudeln mit Hähnchen (fried noodles)",
+  "energy_kcal": 183,
+  "protein_g": 8,
+  "carbs_g": 22,
+  "fat_g": 7,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 3,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "box",
+    "grams": 500
+   }
+  ]
+ },
+ {
+  "name": "Gebratene Nudeln vegetarisch",
+  "energy_kcal": 170,
+  "protein_g": 5,
+  "carbs_g": 24,
+  "fat_g": 6,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 3,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "box",
+    "grams": 500
+   }
+  ]
+ },
+ {
+  "name": "Sweet and sour chicken (battered)",
+  "energy_kcal": 188,
+  "protein_g": 9,
+  "carbs_g": 20,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 8,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Crispy duck (with sauce)",
+  "energy_kcal": 214,
+  "protein_g": 14,
+  "carbs_g": 8,
+  "fat_g": 14,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 4,
+  "sat_fat_g": 4.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Kung Pao chicken",
+  "energy_kcal": 161,
+  "protein_g": 12,
+  "carbs_g": 8,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Chicken curry (Chinese style)",
+  "energy_kcal": 140,
+  "protein_g": 10,
+  "carbs_g": 7,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 3,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Beef with broccoli",
+  "energy_kcal": 127,
+  "protein_g": 11,
+  "carbs_g": 5,
+  "fat_g": 7,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 2,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Wan Tan (fried)",
+  "energy_kcal": 240,
+  "protein_g": 8,
+  "carbs_g": 25,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 1.5,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Dumplings / Jiaozi (steamed)",
+  "energy_kcal": 165,
+  "protein_g": 8,
+  "carbs_g": 22,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 1.5,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Wok vegetables",
+  "energy_kcal": 83,
+  "protein_g": 2.5,
+  "carbs_g": 7,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 3,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Peking soup (hot and sour)",
+  "energy_kcal": 50,
+  "protein_g": 3,
+  "carbs_g": 5,
+  "fat_g": 2,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1.5,
+  "sat_fat_g": 0.5,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Wan Tan soup",
+  "energy_kcal": 71,
+  "protein_g": 5,
+  "carbs_g": 6,
+  "fat_g": 3,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 1,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Fortune cookie",
+  "energy_kcal": 362,
+  "protein_g": 5,
+  "carbs_g": 80,
+  "fat_g": 2.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 35,
+  "sat_fat_g": 0.6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 8
+   }
+  ]
+ },
+ {
+  "name": "Pho Bo (beef noodle soup)",
+  "energy_kcal": 82,
+  "protein_g": 6,
+  "carbs_g": 10,
+  "fat_g": 2,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1.5,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 600
+   }
+  ]
+ },
+ {
+  "name": "Pho Ga (chicken noodle soup)",
+  "energy_kcal": 78,
+  "protein_g": 6,
+  "carbs_g": 10,
+  "fat_g": 1.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1.5,
+  "sat_fat_g": 0.4,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 600
+   }
+  ]
+ },
+ {
+  "name": "Bun Bo Nam Bo (noodle salad bowl)",
+  "energy_kcal": 133,
+  "protein_g": 7,
+  "carbs_g": 15,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 500
+   }
+  ]
+ },
+ {
+  "name": "Summer rolls (fresh, shrimp)",
+  "energy_kcal": 94,
+  "protein_g": 5,
+  "carbs_g": 15,
+  "fat_g": 1.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 2,
+  "sat_fat_g": 0.3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Banh Mi (chicken)",
+  "energy_kcal": 224,
+  "protein_g": 10,
+  "carbs_g": 28,
+  "fat_g": 8,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2,
+  "sugar_g": 4,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Vietnamese coconut curry (chicken)",
+  "energy_kcal": 153,
+  "protein_g": 9,
+  "carbs_g": 9,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 4,
+  "sat_fat_g": 5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 400
+   }
+  ]
+ },
+ {
+  "name": "Lemongrass chicken with rice",
+  "energy_kcal": 178,
+  "protein_g": 11,
+  "carbs_g": 20,
+  "fat_g": 6,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 3,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 450
+   }
+  ]
+ },
+ {
+  "name": "Crispy tofu with vegetables",
+  "energy_kcal": 154,
+  "protein_g": 8,
+  "carbs_g": 8,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 2.5,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 350
+   }
+  ]
+ },
+ {
+  "name": "Nigiri salmon",
+  "energy_kcal": 175,
+  "protein_g": 7,
+  "carbs_g": 30,
+  "fat_g": 3,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 5,
+  "sat_fat_g": 0.6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Nigiri tuna",
+  "energy_kcal": 161,
+  "protein_g": 8,
+  "carbs_g": 30,
+  "fat_g": 1,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 5,
+  "sat_fat_g": 0.3,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 35
+   }
+  ]
+ },
+ {
+  "name": "Maki salmon-avocado",
+  "energy_kcal": 176,
+  "protein_g": 5,
+  "carbs_g": 30,
+  "fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 5,
+  "sat_fat_g": 0.8,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 20
+   }
+  ]
+ },
+ {
+  "name": "Maki cucumber",
+  "energy_kcal": 144,
+  "protein_g": 3,
+  "carbs_g": 32,
+  "fat_g": 0.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 18
+   }
+  ]
+ },
+ {
+  "name": "California roll (inside-out)",
+  "energy_kcal": 199,
+  "protein_g": 6,
+  "carbs_g": 28,
+  "fat_g": 7,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 5,
+  "sat_fat_g": 1.2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Crunchy roll (fried)",
+  "energy_kcal": 234,
+  "protein_g": 6,
+  "carbs_g": 30,
+  "fat_g": 10,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 6,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Sashimi salmon",
+  "energy_kcal": 197,
+  "protein_g": 20,
+  "carbs_g": 0,
+  "fat_g": 13,
+  "source_name": "estimate (restaurant style)",
+  "sugar_g": 0,
+  "sat_fat_g": 2.6,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 15
+   }
+  ]
+ },
+ {
+  "name": "Sushi mixed plate (AYCE round)",
+  "energy_kcal": 189,
+  "protein_g": 8,
+  "carbs_g": 28,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 5,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "plate (10 pcs)",
+    "grams": 300
+   }
+  ]
+ },
+ {
+  "name": "Edamame (salted, in pods)",
+  "energy_kcal": 125,
+  "protein_g": 11,
+  "carbs_g": 9,
+  "fat_g": 5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 5,
+  "sugar_g": 2,
+  "sat_fat_g": 0.6,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Wakame seaweed salad",
+  "energy_kcal": 76,
+  "protein_g": 2,
+  "carbs_g": 8,
+  "fat_g": 4,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 2.5,
+  "sugar_g": 4,
+  "sat_fat_g": 0.6,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 80
+   }
+  ]
+ },
+ {
+  "name": "Miso soup",
+  "energy_kcal": 36,
+  "protein_g": 2.5,
+  "carbs_g": 3,
+  "fat_g": 1.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1,
+  "sat_fat_g": 0.3,
+  "portions": [
+   {
+    "name": "bowl",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Gyoza (fried)",
+  "energy_kcal": 209,
+  "protein_g": 8,
+  "carbs_g": 24,
+  "fat_g": 9,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1.5,
+  "sugar_g": 1.5,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Chicken teriyaki with rice",
+  "energy_kcal": 172,
+  "protein_g": 11,
+  "carbs_g": 22,
+  "fat_g": 4.5,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 1,
+  "sugar_g": 6,
+  "sat_fat_g": 1.2,
+  "portions": [
+   {
+    "name": "plate",
+    "grams": 450
+   }
+  ]
+ },
+ {
+  "name": "Ebi tempura (shrimp)",
+  "energy_kcal": 232,
+  "protein_g": 9,
+  "carbs_g": 22,
+  "fat_g": 12,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.8,
+  "sugar_g": 1,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Soy sauce",
+  "energy_kcal": 52,
+  "protein_g": 8,
+  "carbs_g": 5,
+  "fat_g": 0,
+  "source_name": "estimate (restaurant style)",
+  "fiber_g": 0.5,
+  "sugar_g": 1,
+  "portions": [
+   {
+    "name": "tbsp",
+    "grams": 15
    }
   ]
  }

@@ -1623,7 +1623,7 @@
   ]
  },
  {
-  "name": "Butterkaese",
+  "name": "Butterkäse",
   "energy_kcal": 347,
   "protein_g": 22,
   "carbs_g": 0.5,
@@ -1807,7 +1807,7 @@
   ]
  },
  {
-  "name": "Doener kebab (in bread)",
+  "name": "Döner Kebab (in bread)",
   "energy_kcal": 205,
   "protein_g": 12,
   "carbs_g": 19,
@@ -1818,13 +1818,13 @@
   "source_name": "estimate (restaurant style)",
   "portions": [
    {
-    "name": "doener",
+    "name": "döner",
     "grams": 350
    }
   ]
  },
  {
-  "name": "Falafel dueruem (wrap)",
+  "name": "Falafel Dürüm (wrap)",
   "energy_kcal": 222,
   "protein_g": 8,
   "carbs_g": 25,
@@ -1835,7 +1835,7 @@
   "source_name": "estimate (restaurant style)",
   "portions": [
    {
-    "name": "dueruem",
+    "name": "dürüm",
     "grams": 350
    }
   ]
