@@ -67,13 +67,24 @@ class ActivityLogSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ActivityLog
-        fields = ('id', 'date', 'activity', 'duration_min', 'steps', 'kcal')
+        fields = (
+            'id', 'date', 'activity', 'duration_min', 'steps', 'kcal',
+            'source', 'speed_kmh', 'incline_pct',
+        )
 
     def validate(self, data):
-        activity = data.get('activity', getattr(self.instance, 'activity', None))
+        def value(key):
+            return data.get(key, getattr(self.instance, key, None))
+
+        activity = value('activity')
         if activity == ActivityLog.Activity.STEPS:
-            if not data.get('steps', getattr(self.instance, 'steps', None)):
+            if not value('steps'):
                 raise serializers.ValidationError('The steps activity needs a step count')
-        elif not data.get('duration_min', getattr(self.instance, 'duration_min', None)):
+        elif activity == ActivityLog.Activity.TREADMILL:
+            if not value('duration_min') or not value('speed_kmh'):
+                raise serializers.ValidationError(
+                    'A treadmill session needs duration_min and speed_kmh'
+                )
+        elif not value('duration_min'):
             raise serializers.ValidationError('This activity needs a duration in minutes')
         return data

@@ -227,6 +227,7 @@ class ActivityLog(models.Model):
         VOLLEYBALL = 'volleyball'
         STEPPER = 'stepper'
         STEPS = 'steps'
+        TREADMILL = 'treadmill'
 
     # kcal per kg body weight per hour (volleyball ≈300/h and stepper
     # ≈480/h at 105 kg)
@@ -238,6 +239,12 @@ class ActivityLog(models.Model):
     # kcal per step per kg body weight (≈0.057 kcal/step at 105 kg,
     # ≈570 kcal for 10k steps)
     KCAL_PER_STEP_KG = 0.00054
+
+    # Treadmill: ACSM metabolic equations (VO2 in ml/kg/min), ~5 kcal
+    # per litre O2. Above ~7.2 km/h the running equation applies.
+    RUN_THRESHOLD_KMH = 7.2
+    STRIDE_WALK_M = 0.70
+    STRIDE_RUN_M = 1.00
 
     class Meta:
         ordering = ['-date', '-id']
@@ -272,6 +279,22 @@ class ActivityLog(models.Model):
         help_text="Steps source: '', 'stepper', 'treadmill', 'walking', 'other'",
     )
 
+    speed_kmh = models.DecimalField(
+        max_digits=4,
+        decimal_places=1,
+        null=True,
+        blank=True,
+        help_text='Treadmill speed in km/h',
+    )
+
+    incline_pct = models.DecimalField(
+        max_digits=4,
+        decimal_places=1,
+        null=True,
+        blank=True,
+        help_text='Treadmill incline in percent',
+    )
+
     kcal = models.PositiveIntegerField(blank=True, default=0)
     """Estimated energy burned; computed on save when 0"""
 
@@ -282,6 +305,13 @@ class ActivityLog(models.Model):
         if self.activity == self.Activity.STEPS:
             if not self.steps:
                 raise ValidationError('The steps activity needs a step count')
+        elif self.activity == self.Activity.TREADMILL:
+            if not self.duration_min or not self.speed_kmh:
+                raise ValidationError('A treadmill session needs duration and speed')
+            if not 1 <= float(self.speed_kmh) <= 25:
+                raise ValidationError('Treadmill speed must be between 1 and 25 km/h')
+            if self.incline_pct is not None and not 0 <= float(self.incline_pct) <= 30:
+                raise ValidationError('Incline must be between 0 and 30 percent')
         elif not self.duration_min:
             raise ValidationError('This activity needs a duration in minutes')
 
@@ -289,10 +319,33 @@ class ActivityLog(models.Model):
         weight = current_weight_kg(self.user)
         if self.activity == self.Activity.STEPS:
             return round((self.steps or 0) * weight * self.KCAL_PER_STEP_KG)
+        if self.activity == self.Activity.TREADMILL:
+            speed_m_min = float(self.speed_kmh or 0) * 1000 / 60
+            grade = float(self.incline_pct or 0) / 100
+            if float(self.speed_kmh or 0) > self.RUN_THRESHOLD_KMH:
+                vo2 = 3.5 + 0.2 * speed_m_min + 0.9 * speed_m_min * grade
+            else:
+                vo2 = 3.5 + 0.1 * speed_m_min + 1.8 * speed_m_min * grade
+            kcal_per_min = vo2 * weight * 5 / 1000
+            return round((self.duration_min or 0) * kcal_per_min)
         per_kg_hour = self.KCAL_PER_KG_HOUR[self.Activity(self.activity)]
         return round((self.duration_min or 0) / 60 * weight * per_kg_hour)
 
+    def estimate_steps(self) -> int:
+        """Treadmill steps from distance and a speed-dependent stride"""
+        if self.activity != self.Activity.TREADMILL:
+            return self.steps or 0
+        distance_m = float(self.speed_kmh or 0) * 1000 / 60 * (self.duration_min or 0)
+        stride = (
+            self.STRIDE_RUN_M
+            if float(self.speed_kmh or 0) > self.RUN_THRESHOLD_KMH
+            else self.STRIDE_WALK_M
+        )
+        return round(distance_m / stride)
+
     def save(self, *args, **kwargs):
+        if self.activity == self.Activity.TREADMILL and not self.steps:
+            self.steps = self.estimate_steps()
         if not self.kcal:
             self.kcal = self.estimate_kcal()
         return super().save(*args, **kwargs)
@@ -314,8 +367,11 @@ class ActivityLog(models.Model):
 
     @classmethod
     def steps_for_day(cls, user, day: datetime.date) -> int:
+        """Manual/pushed step counts plus treadmill-session step estimates"""
         result = cls.objects.filter(
-            user=user, date=day, activity=cls.Activity.STEPS
+            user=user,
+            date=day,
+            activity__in=(cls.Activity.STEPS, cls.Activity.TREADMILL),
         ).aggregate(total=models.Sum('steps'))
         return result['total'] or 0
 

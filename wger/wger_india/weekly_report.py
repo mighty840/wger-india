@@ -209,6 +209,16 @@ def workout_section(user, days, profile) -> list[str]:
     )
     for entry in volleyball:
         lines.append(f'- {entry.date}: volleyball {entry.duration_min} min (~{entry.kcal} kcal)')
+    treadmill = ActivityLog.objects.filter(
+        user=user,
+        date__range=(days[0], days[-1]),
+        activity=ActivityLog.Activity.TREADMILL,
+    )
+    for entry in treadmill:
+        lines.append(
+            f'- {entry.date}: treadmill {entry.duration_min} min @ {entry.speed_kmh} km/h, '
+            f'{entry.incline_pct or 0}% (~{entry.kcal} kcal, ~{entry.steps} steps)'
+        )
     lines.append('')
     return lines
 

@@ -207,13 +207,41 @@
                 </div>
             </div>
 
+            <details class="mb-2">
+                <summary class="text-muted">{% translate "Laufband (treadmill session)" %}</summary>
+                <form method="post" class="row g-2 mt-1">
+                    {% csrf_token %}
+                    <input type="hidden" name="action" value="treadmill">
+                    <div class="col-4 col-md-3">
+                        <label class="form-label">{% translate "Minutes" %}</label>
+                        <input type="number" class="form-control" name="minutes" min="1" max="600" required>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <label class="form-label">{% translate "Speed (km/h)" %}</label>
+                        <input type="number" class="form-control" name="speed" min="1" max="25" step="0.1" required>
+                    </div>
+                    <div class="col-4 col-md-3">
+                        <label class="form-label">{% translate "Incline (%)" %}</label>
+                        <input type="number" class="form-control" name="incline" min="0" max="30" step="0.5" value="0">
+                    </div>
+                    <div class="col-12 col-md-3 d-flex align-items-end">
+                        <button type="submit" class="btn btn-primary w-100">
+                            {% translate "Log session" %}
+                        </button>
+                    </div>
+                </form>
+            </details>
+
             {% if activity_entries %}
                 <ul class="list-group list-group-flush">
                     {% for entry in activity_entries %}
                         <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                             <span>
                                 {{ entry.get_activity_display|capfirst }}:
-                                {% if entry.steps %}{{ entry.steps }} {% translate "steps" %}
+                                {% if entry.activity == 'treadmill' %}
+                                    {{ entry.duration_min }} min @ {{ entry.speed_kmh }} km/h,
+                                    {{ entry.incline_pct|default:0 }}% — ~{{ entry.steps }} {% translate "steps" %}
+                                {% elif entry.steps %}{{ entry.steps }} {% translate "steps" %}
                                 {% else %}{{ entry.duration_min }} min{% endif %}
                                 (~{{ entry.kcal }} kcal)
                             </span>

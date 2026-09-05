@@ -202,3 +202,97 @@ class RoutineCommandTestCase(TestCase):
         User.objects.create_user('lifter2', password='test')
         out = self.run_command('lifter2')
         self.assertEqual(out.count('created custom exercise'), 0)
+
+
+class TreadmillTestCase(TestCase):
+    fixtures = ('licenses.json', 'languages.json', 'gym.json', 'gym_config.json')
+
+    def setUp(self):
+        self.user = User.objects.create_user('runner', password='test')
+        WeightEntry.objects.create(user=self.user, weight=Decimal('107.5'), date='2026-09-01')
+
+    def make(self, minutes, speed, incline=0):
+        entry = ActivityLog(
+            user=self.user,
+            activity=ActivityLog.Activity.TREADMILL,
+            duration_min=minutes,
+            speed_kmh=Decimal(str(speed)),
+            incline_pct=Decimal(str(incline)),
+        )
+        entry.full_clean()
+        entry.save()
+        return entry
+
+    def test_walking_kcal_acsm(self):
+        # 6 km/h = 100 m/min, flat: VO2 = 3.5 + 0.1*100 = 13.5
+        # kcal/min = 13.5 * 107.5 * 5/1000 = 7.256 -> 30 min = 218
+        entry = self.make(30, 6.0)
+        self.assertEqual(entry.kcal, 218)
+
+    def test_incline_raises_kcal(self):
+        # 6 km/h at 5%: VO2 = 13.5 + 1.8*100*0.05 = 22.5 -> 12.09/min -> 363
+        entry = self.make(30, 6.0, 5)
+        self.assertEqual(entry.kcal, 363)
+        self.assertGreater(entry.kcal, self.make(30, 6.0).kcal)
+
+    def test_running_equation_above_threshold(self):
+        # 9 km/h = 150 m/min, flat: VO2 = 3.5 + 0.2*150 = 33.5
+        # kcal/min = 33.5 * 107.5 * 5/1000 = 18.006 -> 30 min = 540
+        entry = self.make(30, 9.0)
+        self.assertEqual(entry.kcal, 540)
+
+    def test_steps_estimated_from_distance(self):
+        # 6 km/h for 30 min = 3000 m walking / 0.70 m stride = 4286
+        entry = self.make(30, 6.0)
+        self.assertEqual(entry.steps, 4286)
+        # 9 km/h for 30 min = 4500 m running / 1.00 m stride = 4500
+        self.assertEqual(self.make(30, 9.0).steps, 4500)
+
+    def test_treadmill_steps_count_toward_daily_goal(self):
+        self.make(30, 6.0)
+        ActivityLog.log_steps(self.user, timezone.localdate(), 5000)
+        self.assertEqual(
+            ActivityLog.steps_for_day(self.user, timezone.localdate()), 5000 + 4286
+        )
+
+    def test_kcal_flows_into_daily_total(self):
+        entry = self.make(30, 6.0, 5)
+        self.assertEqual(ActivityLog.kcal_for_day(self.user, timezone.localdate()), entry.kcal)
+
+    def test_validation(self):
+        with self.assertRaises(ValidationError):
+            ActivityLog(
+                user=self.user, activity='treadmill', duration_min=30
+            ).full_clean()  # no speed
+        with self.assertRaises(ValidationError):
+            self.make(30, 30.0)  # speed out of range
+        with self.assertRaises(ValidationError):
+            self.make(30, 6.0, 45)  # incline out of range
+
+    def test_quicklog_view_post(self):
+        self.client.login(username='runner', password='test')
+        self.client.post(
+            reverse('india:quicklog'),
+            {'action': 'treadmill', 'minutes': '45', 'speed': '6.5', 'incline': '3'},
+        )
+        entry = ActivityLog.objects.get(activity='treadmill')
+        self.assertEqual(entry.duration_min, 45)
+        self.assertEqual(float(entry.speed_kmh), 6.5)
+        self.assertGreater(entry.kcal, 0)
+        self.assertGreater(entry.steps, 0)
+
+    def test_api_create(self):
+        # Third Party
+        from rest_framework.test import APIClient
+
+        client = APIClient()
+        client.force_authenticate(user=self.user)
+        response = client.post(
+            '/api/v2/activity-log/',
+            {'activity': 'treadmill', 'duration_min': 30, 'speed_kmh': '6.0', 'incline_pct': '5.0'},
+        )
+        self.assertEqual(response.status_code, 201)
+        self.assertEqual(response.data['kcal'], 363)
+        # missing speed rejected
+        response = client.post('/api/v2/activity-log/', {'activity': 'treadmill', 'duration_min': 30})
+        self.assertEqual(response.status_code, 400)

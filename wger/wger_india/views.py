@@ -145,6 +145,32 @@ def handle_quicklog_post(request, day):
             except ValidationError as e:
                 messages.error(request, '; '.join(e.messages))
 
+    elif action == 'treadmill':
+        try:
+            minutes = int(request.POST.get('minutes', ''))
+            speed = float(request.POST.get('speed', ''))
+            incline = float(request.POST.get('incline') or 0)
+        except ValueError:
+            messages.error(request, 'Treadmill needs minutes and speed (incline optional)')
+            return redirect('india:quicklog')
+        entry = ActivityLog(
+            user=request.user,
+            activity=ActivityLog.Activity.TREADMILL,
+            duration_min=minutes,
+            speed_kmh=speed,
+            incline_pct=incline,
+        )
+        try:
+            entry.full_clean()
+            entry.save()
+            messages.success(
+                request,
+                f'Laufband: {minutes} min @ {speed:g} km/h, {incline:g}% — '
+                f'~{entry.kcal} kcal, ~{entry.steps} steps',
+            )
+        except ValidationError as e:
+            messages.error(request, '; '.join(e.messages))
+
     elif action == 'activity_delete':
         ActivityLog.objects.filter(
             user=request.user, pk=request.POST.get('pk'), date=day
