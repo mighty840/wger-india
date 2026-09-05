@@ -2780,5 +2780,130 @@
     "grams": 45
    }
   ]
+ },
+ {
+  "name": "High Protein Grießpudding",
+  "energy_kcal": 90,
+  "protein_g": 10,
+  "carbs_g": 9,
+  "fat_g": 1.5,
+  "brand": "Lidl Milbona",
+  "source_name": "product label (DE)",
+  "fiber_g": 0.3,
+  "sugar_g": 6,
+  "sat_fat_g": 0.9,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "High Protein Mousse",
+  "energy_kcal": 91,
+  "protein_g": 10,
+  "carbs_g": 6,
+  "fat_g": 3,
+  "brand": "Lidl Milbona",
+  "source_name": "product label (DE)",
+  "fiber_g": 0.5,
+  "sugar_g": 4.5,
+  "sat_fat_g": 2,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "High Protein Joghurt (Frucht)",
+  "energy_kcal": 64,
+  "protein_g": 9,
+  "carbs_g": 6.5,
+  "fat_g": 0.2,
+  "brand": "Lidl Milbona / Aldi Milsani",
+  "source_name": "product label (DE)",
+  "fiber_g": 0.3,
+  "sugar_g": 6,
+  "sat_fat_g": 0.1,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Protein Granola",
+  "energy_kcal": 380,
+  "protein_g": 23,
+  "carbs_g": 45,
+  "fat_g": 12,
+  "brand": "Lidl Crownfield",
+  "source_name": "product label (DE)",
+  "fiber_g": 7,
+  "sugar_g": 11,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Proteinbrötchen",
+  "energy_kcal": 256,
+  "protein_g": 14,
+  "carbs_g": 32,
+  "fat_g": 8,
+  "brand": "Lidl/Aldi (typical)",
+  "source_name": "product label (DE)",
+  "fiber_g": 6,
+  "sugar_g": 2,
+  "sat_fat_g": 1.2,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 65
+   }
+  ]
+ },
+ {
+  "name": "High Protein Eis",
+  "energy_kcal": 168,
+  "protein_g": 10,
+  "carbs_g": 22,
+  "fat_g": 4.5,
+  "brand": "Aldi/Lidl (typical)",
+  "source_name": "product label (DE)",
+  "fiber_g": 1,
+  "sugar_g": 18,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Skyr Drink",
+  "energy_kcal": 52,
+  "protein_g": 7.5,
+  "carbs_g": 5,
+  "fat_g": 0.2,
+  "brand": "Aldi/Lidl (typical)",
+  "source_name": "product label (DE)",
+  "sugar_g": 5,
+  "sat_fat_g": 0.1,
+  "portions": [
+   {
+    "name": "bottle",
+    "grams": 250
+   }
+  ]
  }
 ]
