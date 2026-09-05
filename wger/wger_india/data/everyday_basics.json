@@ -2162,5 +2162,497 @@
     "grams": 130
    }
   ]
+ },
+ {
+  "name": "Harzer Käse",
+  "energy_kcal": 116,
+  "protein_g": 27,
+  "carbs_g": 0.5,
+  "fat_g": 0.7,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 0.5,
+  "sat_fat_g": 0.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 25
+   },
+   {
+    "name": "portion",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Proteinpudding (High Protein)",
+  "energy_kcal": 72,
+  "protein_g": 10,
+  "carbs_g": 4.5,
+  "fat_g": 1.5,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 4,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Fruchtquark",
+  "energy_kcal": 98,
+  "protein_g": 7,
+  "carbs_g": 12,
+  "fat_g": 2.5,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.2,
+  "sugar_g": 11,
+  "sat_fat_g": 1.6,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Schokopudding (Kühlregal)",
+  "energy_kcal": 124,
+  "protein_g": 3,
+  "carbs_g": 20,
+  "fat_g": 3.5,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.5,
+  "sugar_g": 17,
+  "sat_fat_g": 2.2,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 125
+   }
+  ]
+ },
+ {
+  "name": "Milchreis (Kühlregal)",
+  "energy_kcal": 124,
+  "protein_g": 3.5,
+  "carbs_g": 22,
+  "fat_g": 2.5,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.2,
+  "sugar_g": 12,
+  "sat_fat_g": 1.6,
+  "portions": [
+   {
+    "name": "cup",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Protein Drink (fertig)",
+  "energy_kcal": 67,
+  "protein_g": 10,
+  "carbs_g": 4.5,
+  "fat_g": 1,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 4,
+  "sat_fat_g": 0.6,
+  "portions": [
+   {
+    "name": "bottle",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Kakao (Trinkschokolade)",
+  "energy_kcal": 71,
+  "protein_g": 3.3,
+  "carbs_g": 11,
+  "fat_g": 1.5,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.5,
+  "sugar_g": 10,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "glass",
+    "grams": 250
+   }
+  ]
+ },
+ {
+  "name": "Leberwurst",
+  "energy_kcal": 304,
+  "protein_g": 12,
+  "carbs_g": 1,
+  "fat_g": 28,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 0.5,
+  "sat_fat_g": 10,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Fleischwurst / Lyoner",
+  "energy_kcal": 275,
+  "protein_g": 12,
+  "carbs_g": 0.5,
+  "fat_g": 25,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 0.5,
+  "sat_fat_g": 9.5,
+  "portions": [
+   {
+    "name": "slice",
+    "grams": 20
+   }
+  ]
+ },
+ {
+  "name": "Wiener Würstchen",
+  "energy_kcal": 268,
+  "protein_g": 12,
+  "carbs_g": 1,
+  "fat_g": 24,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 0.5,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Frikadellen (Kühlregal)",
+  "energy_kcal": 242,
+  "protein_g": 14,
+  "carbs_g": 6,
+  "fat_g": 18,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.8,
+  "sugar_g": 1,
+  "sat_fat_g": 7,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 90
+   }
+  ]
+ },
+ {
+  "name": "Matjes",
+  "energy_kcal": 222,
+  "protein_g": 14,
+  "carbs_g": 1,
+  "fat_g": 18,
+  "source_name": "product label (DE, typical)",
+  "sugar_g": 0.5,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Fischstäbchen",
+  "energy_kcal": 197,
+  "protein_g": 11,
+  "carbs_g": 18,
+  "fat_g": 9,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.8,
+  "sugar_g": 0.8,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Maultaschen",
+  "energy_kcal": 183,
+  "protein_g": 8,
+  "carbs_g": 22,
+  "fat_g": 7,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1.5,
+  "sugar_g": 1.5,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Gnocchi (plain, cooked)",
+  "energy_kcal": 157,
+  "protein_g": 4,
+  "carbs_g": 33,
+  "fat_g": 1,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1.8,
+  "sugar_g": 0.8,
+  "sat_fat_g": 0.2,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Tortellini (cheese, cooked)",
+  "energy_kcal": 219,
+  "protein_g": 11,
+  "carbs_g": 28,
+  "fat_g": 7,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 2,
+  "sugar_g": 2,
+  "sat_fat_g": 3.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Spätzle (cooked)",
+  "energy_kcal": 171,
+  "protein_g": 6,
+  "carbs_g": 30,
+  "fat_g": 3,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1.5,
+  "sugar_g": 0.8,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 200
+   }
+  ]
+ },
+ {
+  "name": "Kartoffelsalat (mayo)",
+  "energy_kcal": 146,
+  "protein_g": 2,
+  "carbs_g": 12,
+  "fat_g": 10,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1.2,
+  "sugar_g": 2,
+  "sat_fat_g": 1,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Rahmspinat (TK)",
+  "energy_kcal": 58,
+  "protein_g": 2.5,
+  "carbs_g": 3,
+  "fat_g": 4,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1.8,
+  "sugar_g": 1,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Apfelmus",
+  "energy_kcal": 59,
+  "protein_g": 0.3,
+  "carbs_g": 14,
+  "fat_g": 0.2,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1,
+  "sugar_g": 13,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 100
+   }
+  ]
+ },
+ {
+  "name": "Rote Grütze",
+  "energy_kcal": 84,
+  "protein_g": 0.5,
+  "carbs_g": 20,
+  "fat_g": 0.2,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1,
+  "sugar_g": 18,
+  "portions": [
+   {
+    "name": "portion",
+    "grams": 150
+   }
+  ]
+ },
+ {
+  "name": "Guacamole (Becher)",
+  "energy_kcal": 175,
+  "protein_g": 2,
+  "carbs_g": 8,
+  "fat_g": 15,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 3,
+  "sugar_g": 2,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Joghurt-Salatdressing",
+  "energy_kcal": 146,
+  "protein_g": 1.5,
+  "carbs_g": 8,
+  "fat_g": 12,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 0.2,
+  "sugar_g": 6,
+  "sat_fat_g": 1.2,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Studentenfutter",
+  "energy_kcal": 486,
+  "protein_g": 14,
+  "carbs_g": 40,
+  "fat_g": 30,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 5,
+  "sugar_g": 32,
+  "sat_fat_g": 4,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   }
+  ]
+ },
+ {
+  "name": "Reiswaffeln",
+  "energy_kcal": 379,
+  "protein_g": 8,
+  "carbs_g": 80,
+  "fat_g": 3,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 3,
+  "sugar_g": 1,
+  "sat_fat_g": 0.5,
+  "portions": [
+   {
+    "name": "piece",
+    "grams": 8
+   }
+  ]
+ },
+ {
+  "name": "Knäckebrot",
+  "energy_kcal": 298,
+  "protein_g": 10,
+  "carbs_g": 60,
+  "fat_g": 2,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 15,
+  "sugar_g": 1.5,
+  "sat_fat_g": 0.3,
+  "portions": [
+   {
+    "name": "slice",
+    "grams": 10
+   }
+  ]
+ },
+ {
+  "name": "Salzstangen",
+  "energy_kcal": 363,
+  "protein_g": 9,
+  "carbs_g": 75,
+  "fat_g": 3,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 3,
+  "sugar_g": 2,
+  "sat_fat_g": 0.5,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 25
+   }
+  ]
+ },
+ {
+  "name": "Chips (Paprika)",
+  "energy_kcal": 521,
+  "protein_g": 6,
+  "carbs_g": 50,
+  "fat_g": 33,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 4,
+  "sugar_g": 3,
+  "sat_fat_g": 3,
+  "portions": [
+   {
+    "name": "handful",
+    "grams": 30
+   },
+   {
+    "name": "bag",
+    "grams": 175
+   }
+  ]
+ },
+ {
+  "name": "Schokoriegel (Snickers-Art)",
+  "energy_kcal": 476,
+  "protein_g": 8,
+  "carbs_g": 57,
+  "fat_g": 24,
+  "source_name": "product label (DE, typical)",
+  "fiber_g": 1.5,
+  "sugar_g": 48,
+  "sat_fat_g": 9,
+  "portions": [
+   {
+    "name": "bar",
+    "grams": 50
+   }
+  ]
  }
 ]
