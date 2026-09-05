@@ -2654,5 +2654,131 @@
     "grams": 50
    }
   ]
+ },
+ {
+  "name": "Sportness Proteinriegel",
+  "energy_kcal": 359,
+  "protein_g": 32,
+  "carbs_g": 33,
+  "fat_g": 11,
+  "brand": "dm Sportness",
+  "source_name": "product label (DE)",
+  "fiber_g": 4,
+  "sugar_g": 20,
+  "sat_fat_g": 6,
+  "portions": [
+   {
+    "name": "bar",
+    "grams": 45
+   }
+  ]
+ },
+ {
+  "name": "Sportness Protein Müsli",
+  "energy_kcal": 369,
+  "protein_g": 30,
+  "carbs_g": 42,
+  "fat_g": 9,
+  "brand": "dm Sportness",
+  "source_name": "product label (DE)",
+  "fiber_g": 8,
+  "sugar_g": 12,
+  "sat_fat_g": 2.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Sportness Protein Porridge",
+  "energy_kcal": 343,
+  "protein_g": 20,
+  "carbs_g": 50,
+  "fat_g": 7,
+  "brand": "dm Sportness",
+  "source_name": "product label (DE)",
+  "fiber_g": 8,
+  "sugar_g": 5,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 60
+   }
+  ]
+ },
+ {
+  "name": "Sportness Protein Pancake Mix (dry)",
+  "energy_kcal": 365,
+  "protein_g": 50,
+  "carbs_g": 30,
+  "fat_g": 5,
+  "brand": "dm Sportness",
+  "source_name": "product label (DE)",
+  "fiber_g": 3,
+  "sugar_g": 6,
+  "sat_fat_g": 1.5,
+  "portions": [
+   {
+    "name": "serving",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Winlab Proteinriegel",
+  "energy_kcal": 350,
+  "protein_g": 30,
+  "carbs_g": 35,
+  "fat_g": 10,
+  "brand": "Rossmann Winlab",
+  "source_name": "product label (DE)",
+  "fiber_g": 4,
+  "sugar_g": 22,
+  "sat_fat_g": 5.5,
+  "portions": [
+   {
+    "name": "bar",
+    "grams": 45
+   }
+  ]
+ },
+ {
+  "name": "Winlab Protein Chips",
+  "energy_kcal": 408,
+  "protein_g": 35,
+  "carbs_g": 40,
+  "fat_g": 12,
+  "brand": "Rossmann Winlab",
+  "source_name": "product label (DE)",
+  "fiber_g": 3,
+  "sugar_g": 2,
+  "sat_fat_g": 1.8,
+  "portions": [
+   {
+    "name": "bag",
+    "grams": 50
+   }
+  ]
+ },
+ {
+  "name": "Protein Wrap",
+  "energy_kcal": 248,
+  "protein_g": 16,
+  "carbs_g": 28,
+  "fat_g": 8,
+  "brand": "dm/Rossmann (typical)",
+  "source_name": "product label (DE)",
+  "fiber_g": 10,
+  "sugar_g": 2,
+  "sat_fat_g": 1.2,
+  "portions": [
+   {
+    "name": "wrap",
+    "grams": 45
+   }
+  ]
  }
 ]
