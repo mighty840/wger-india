@@ -326,7 +326,10 @@ class ActivityLog(models.Model):
                 vo2 = 3.5 + 0.2 * speed_m_min + 0.9 * speed_m_min * grade
             else:
                 vo2 = 3.5 + 0.1 * speed_m_min + 1.8 * speed_m_min * grade
-            kcal_per_min = vo2 * weight * 5 / 1000
+            # NET of the resting component (3.5 ml/kg/min): the deficit
+            # baseline (BMR x 1.2) already pays for sitting still, so the
+            # session only adds the extra work on top.
+            kcal_per_min = max(vo2 - 3.5, 0) * weight * 5 / 1000
             return round((self.duration_min or 0) * kcal_per_min)
         per_kg_hour = self.KCAL_PER_KG_HOUR[self.Activity(self.activity)]
         return round((self.duration_min or 0) / 60 * weight * per_kg_hour)

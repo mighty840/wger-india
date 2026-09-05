@@ -223,23 +223,29 @@ class TreadmillTestCase(TestCase):
         entry.save()
         return entry
 
-    def test_walking_kcal_acsm(self):
-        # 6 km/h = 100 m/min, flat: VO2 = 3.5 + 0.1*100 = 13.5
-        # kcal/min = 13.5 * 107.5 * 5/1000 = 7.256 -> 30 min = 218
+    def test_walking_kcal_acsm_net(self):
+        # 6 km/h = 100 m/min, flat: VO2 = 13.5, net 10.0
+        # kcal/min = 10 * 107.5 * 5/1000 = 5.375 -> 30 min = 161
         entry = self.make(30, 6.0)
-        self.assertEqual(entry.kcal, 218)
+        self.assertEqual(entry.kcal, 161)
 
     def test_incline_raises_kcal(self):
-        # 6 km/h at 5%: VO2 = 13.5 + 1.8*100*0.05 = 22.5 -> 12.09/min -> 363
+        # 6 km/h at 5%: VO2 = 22.5, net 19 -> 10.21/min -> 306
         entry = self.make(30, 6.0, 5)
-        self.assertEqual(entry.kcal, 363)
+        self.assertEqual(entry.kcal, 306)
         self.assertGreater(entry.kcal, self.make(30, 6.0).kcal)
 
+    def test_steep_incline_walk(self):
+        # user's real session: 3 km/h (50 m/min) at 15%:
+        # VO2 = 3.5 + 5 + 13.5 = 22, net 18.5 -> 9.94/min -> 298
+        entry = self.make(30, 3.0, 15)
+        self.assertEqual(entry.kcal, 298)
+
     def test_running_equation_above_threshold(self):
-        # 9 km/h = 150 m/min, flat: VO2 = 3.5 + 0.2*150 = 33.5
-        # kcal/min = 33.5 * 107.5 * 5/1000 = 18.006 -> 30 min = 540
+        # 9 km/h = 150 m/min, flat: VO2 = 33.5, net 30
+        # kcal/min = 30 * 107.5 * 5/1000 = 16.125 -> 30 min = 484
         entry = self.make(30, 9.0)
-        self.assertEqual(entry.kcal, 540)
+        self.assertEqual(entry.kcal, 484)
 
     def test_steps_estimated_from_distance(self):
         # 6 km/h for 30 min = 3000 m walking / 0.70 m stride = 4286
@@ -292,7 +298,7 @@ class TreadmillTestCase(TestCase):
             {'activity': 'treadmill', 'duration_min': 30, 'speed_kmh': '6.0', 'incline_pct': '5.0'},
         )
         self.assertEqual(response.status_code, 201)
-        self.assertEqual(response.data['kcal'], 363)
+        self.assertEqual(response.data['kcal'], 306)
         # missing speed rejected
         response = client.post('/api/v2/activity-log/', {'activity': 'treadmill', 'duration_min': 30})
         self.assertEqual(response.status_code, 400)
